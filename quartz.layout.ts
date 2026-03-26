@@ -23,6 +23,11 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
+    Component.AuthorInfo({
+      name: "Martin Rosén-Lidholm",
+      portraitPath: "/chronograph/static/mrl-portrait.jpg",
+      linkedinUrl: "https://www.linkedin.com/in/martin-rosen-lidholm/",
+    }),
     Component.TagList(),
   ],
   left: [
@@ -39,9 +44,9 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer(),
+    Component.Graph(),
   ],
   right: [
-    Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],

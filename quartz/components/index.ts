@@ -24,9 +24,11 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import Lightbox from "./Lightbox"
+import AuthorInfo from "./AuthorInfo"
 
 export {
   ArticleTitle,
+  AuthorInfo,
   Content,
   TagContent,
   FolderContent,
