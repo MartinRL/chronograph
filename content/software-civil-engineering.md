@@ -102,7 +102,11 @@ This is not an argument that software development is *inferior* to civil enginee
 
 Yet this transformation from craft to engineering is not without precedent in the software domain. Infrastructure provisioning has already undergone exactly this journey.
 
-A decade ago, provisioning a server was craft work: manual, unreproducible, and dependent on individual knowledge. Configuration management tools (Ansible, Chef, Puppet) codified the steps imperatively, but remained sequences of instructions rather than engineering specifications. The decisive shift came with Terraform and the Infrastructure as Code (IaC) paradigm \[9\], where engineers began declaring *what* the infrastructure should be rather than *how* to provision it. This introduced the elements of a genuine engineering discipline:
+A decade ago, provisioning a server was craft work: manual, unreproducible, and dependent on individual knowledge. Reliability engineering named the problem: servers were "pets," individually maintained, and irreplaceable.
+
+> "Pets are servers you name and nurse back to health. Cattle are numbered and replaced." — Bill Baker
+
+The shift from pets to cattle required making infrastructure reproducible by specification rather than by hand. Configuration management tools (Ansible, Chef, Puppet) codified the steps imperatively, but remained sequences of instructions rather than engineering specifications. The decisive shift came with Terraform and the Infrastructure as Code (IaC) paradigm \[9\], where engineers began declaring *what* the infrastructure should be rather than *how* to provision it. This introduced the elements of a genuine engineering discipline:
 
 - **Declarative specification** — `.tf` files describe the desired state, not the steps to achieve it.
 - **State management** — a state file records what actually exists right now, enabling diffing against the declared specification.
