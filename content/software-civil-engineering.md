@@ -1,3 +1,8 @@
+---
+title: "Software Civil Engineering"
+description: "From Craft to Discipline: Why Agentic AI Demands the Professionalization of Software Production"
+---
+
 # Software Civil Engineering
 
 ## From Craft to Discipline: Why Agentic AI Demands the Professionalization of Software Production
