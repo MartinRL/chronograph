@@ -43,7 +43,7 @@ Agentic software engineering (the delegation of implementation tasks to autonomo
 
 The implication: **the difference between modest and transformational productivity gains from agentic engineering is not better AI; it is better engineering.** Formalized practices, specifications, and verification mechanisms that characterize mature engineering disciplines.
 
-The vocabulary for this shift already exists, borrowed from autonomous systems design: **human in the loop** vs **human on the loop** \[24\]. A developer who reviews every line an AI agent produces is in the loop: they micro-manage agents, approving each artifact before it can proceed. A team that defines formal specifications, sets verification criteria, and monitors outcomes while agents execute independently is on the loop: they manage the engineering process, not each individual action. The difference mirrors construction. A foreman who inspects each brick placement micro-manages; a foreman who commissions blueprints, enforces building codes, and dispatches inspectors manages, and can coordinate hundreds of workers in parallel precisely because they do not micro-manage. Moving from "in" to "on" is the 10% → 10× transition, and it requires the same thing in software that it required in civil engineering: a specification and verification infrastructure that replaces micro-management with management.
+The vocabulary for this shift already exists, borrowed from autonomous systems design: **human in the loop** vs **human on the loop** \[24\]. A developer who reviews every line an AI agent produces is in the loop: they micro-manage agents, approving each artifact before it can proceed. A team that defines formal specifications, sets verification criteria, and monitors outcomes while agents execute independently is on the loop: they manage the engineering process, not each individual action, just as a foreman who commissions blueprints and dispatches inspectors can coordinate hundreds of workers precisely because they do not inspect each brick. Moving from "in" to "on" is the 10% → 10× transition, and it requires the same thing in software that it required in civil engineering: a specification and verification infrastructure that replaces micro-management with management.
 
 > "The 'in the loop' way is to fix the artefact… The 'on the loop' way is to change the harness that produced it." — Kief Morris \[24\]
 
@@ -52,7 +52,7 @@ The vocabulary for this shift already exists, borrowed from autonomous systems d
 
 This is why the current excitement around LLM-based code generation, while justified, understates the real opportunity. Generative AI has made the construction workers faster, but the bottleneck in civil engineering was never the bricklaying. It was the blueprints, the structural calculations, the material specifications, the building codes, and the accountability framework. Software faces the same asymmetry: faster code production addresses one of the six pillars outlined below and leaves the other five untouched.
 
-<img src="six-pillars-asymmetry.svg" alt="The Six Pillars Asymmetry" width="100%">
+![The Six Pillars Asymmetry](six-pillars-asymmetry.svg)
 
 *Current AI investment accelerates construction. The six disciplinary foundations remain scaffolding.*
 
@@ -78,9 +78,9 @@ Civil engineering rests on six foundational pillars that collectively distinguis
 
 ### 2.2 Software development's current position
 
-Mapped against these pillars, software development's disciplinary immaturity becomes visible:
+Mapped against these pillars, software development's disciplinary immaturity becomes visible. The six pillars expose six gaps, each of which demands a corresponding mechanism:
 
-| Pillar                 | Civil Engineering                      | Software Development                                                                        |
+| Pillar                 | Civil Engineering                      | Software Development Today                                                                  |
 | ---------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------- |
 | Formal specification   | Blueprints, structural calculations    | Informal user stories, ad-hoc documentation                                                 |
 | Material datasheets    | Certified steel grades, concrete specs | No standardized performance profiles for frameworks, patterns, or infrastructure components |
@@ -89,7 +89,7 @@ Mapped against these pillars, software development's disciplinary immaturity bec
 | Professional licensure | PE license, personal liability         | None; no individual accountability for engineering decisions                                |
 | Formal education       | Accredited, standardized, examined     | Highly variable; no required competency demonstration                                       |
 
-This is not an argument that software development is *inferior* to civil engineering. It is an observation that software development lacks the institutional and methodological infrastructure that would allow autonomous agents to operate at industrial scale. AI agents can already assist craft practitioners, but scaling from copilot to autonomous production requires the formalized substrate that engineering disciplines provide.
+This is not an argument that software development is *inferior* to civil engineering. It is an observation that software development lacks the institutional and methodological infrastructure that would allow autonomous agents to operate at industrial scale. Software's freedom from physical constraints is precisely what makes formal specification essential: there are no material properties to catch design errors; only the specification stands between intent and defect. AI agents can already assist craft practitioners, but scaling from copilot to autonomous production requires the formalized substrate that engineering disciplines provide.
 
 > "The architectural sins that a human team could tolerate — the hidden coupling, the undocumented side effects, the modules that only make sense if you know the history — are fatal to AI-assisted development." — Ian Bull \[13\]
 
@@ -99,14 +99,14 @@ Yet this transformation from craft to engineering is not without precedent in th
 
 A decade ago, provisioning a server was craft work: manual, unreproducible, and dependent on individual knowledge. Configuration management tools (Ansible, Chef, Puppet) codified the steps imperatively, but remained sequences of instructions rather than engineering specifications. The decisive shift came with Terraform and the Infrastructure as Code (IaC) paradigm \[9\], where engineers began declaring *what* the infrastructure should be rather than *how* to provision it. This introduced the elements of a genuine engineering discipline:
 
-- **Declarative specification** — `.tf` files describe the desired state, not the steps to achieve it. This is the blueprint.
-- **State management** — a state file records what actually exists right now. This is the as-built documentation that enables diffing.
-- **Plan before apply** — `terraform plan` shows exactly what will change before any mutation occurs. This is the structural analysis step: verify before you build.
+- **Declarative specification** — `.tf` files describe the desired state, not the steps to achieve it.
+- **State management** — a state file records what actually exists right now, enabling diffing against the declared specification.
+- **Plan before apply** — `terraform plan` shows exactly what will change before any mutation occurs.
 - **Controlled execution** — `terraform apply` realizes the verified plan in a reproducible, auditable manner.
-- **Providers** — plugins that encode the properties, constraints, and behaviors of specific technical substrates (AWS, Azure, GCP). This is the material datasheet: known properties of the materials you build with.
-- **Drift detection** — continuous comparison of actual state against declared specification. This is the building inspection.
+- **Providers** — plugins that encode the properties, constraints, and behaviors of specific technical substrates (AWS, Azure, GCP).
+- **Drift detection** — continuous comparison of actual state against declared specification.
 
-<img src="craft-to-engineering-timeline.svg" alt="Craft-to-Engineering Timeline" width="100%">
+![Craft-to-Engineering Timeline](craft-to-engineering-timeline.svg)
 
 *Each evolutionary stage lights up more pillars. Three remain dark, foreshadowing Section 10.*
 
@@ -142,7 +142,7 @@ Each vertical "slice" through the model constitutes a Given-When-Then specificat
 
 This is the critical property: **each slice is an independently verifiable, deterministic specification of behavior.** An AI agent implementing a slice does not need to "understand" the business logic; it needs to produce code that satisfies the Given-When-Then contract. Just as a construction worker does not need to understand why a load-bearing wall is positioned where it is, only that the blueprint says it must be there.
 
-<img src="event-model-slice.svg" alt="An Event Model Slice" width="100%">
+![An Event Model Slice](event-model-slice.svg)
 
 *Each vertical slice is an independently verifiable Given-When-Then contract.*
 
@@ -204,7 +204,7 @@ Paired with Deciders, an Event Model becomes more than a specification document;
 
 ### 4.4 The six elements: a structural isomorphism
 
-With both the Terraform lifecycle and the Decider pattern in hand, the full structural correspondence becomes visible:
+The gap analysis in Section 2 posed six questions; the Terraform lifecycle and the Decider pattern now provide answers:
 
 | Element             | Terraform (Infrastructure)                              | Civil Engineering                                  | Product Level                                                                           |
 | ------------------- | ------------------------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------- |
@@ -364,7 +364,7 @@ The traditional developer/architect/tech lead taxonomy gives way to roles organi
 - **Quality Engineers**: build and maintain the eval system, design adversarial testing strategies, monitor production drift. Evolution of QA + SRE + compliance.
 - **Specification Leads**: own the unified specification for a product area, govern changes, ensure coherence across behavioral, operational, and policy layers. A leadership function, not an architecture role.
 
-<img src="role-evolution-map.svg" alt="Role Evolution Map" width="100%">
+![Role Evolution Map](role-evolution-map.svg)
 
 *Roles reorganize around the specification lifecycle, not the implementation lifecycle.*
 
@@ -376,13 +376,13 @@ Civil engineering professionalized *reactively*: bridges collapsed, buildings fa
 
 Software Civil Engineering has a different forcing function: **economic opportunity, not catastrophe.** The productivity gap between formalized and unformalized organizations is already visible, and it will only widen as agent capabilities improve. Organizations that formalize their specifications sufficiently for agents to operate autonomously will pull ahead. This pressure is operating *now*.
 
-That said, "not catastrophe" does not mean "without severe consequences." Large-scale software failures have already caused billions in public waste. Sweden's Millennium healthcare IT system consumed 5.5 billion SEK before being scrapped after just three days of operation \[20\]. Denmark's property valuation system (ejendomsvurdering) ballooned from 200 million to over 4 billion DKK across a decade of delays, delivering a system of what internal reviewers called "astonishing low quality" \[21\]. Finland's Apotti patient data system exceeded €600 million, prompting over 600 doctors to file formal complaints over patient safety risks \[22\]. Nobody died, but citizens were harmed, public trust eroded, and billions were lost. The forcing function for Software Civil Engineering may be opportunity rather than tragedy, but the cost of the status quo is already severe.
+That said, "not catastrophe" does not mean "without severe consequences." Scandinavian healthcare and government IT projects alone have consumed billions in public funds: Sweden's Millennium system (5.5 billion SEK, scrapped after three days \[20\]), Denmark's property valuation system (4 billion DKK, "astonishing low quality" \[21\]), Finland's Apotti patient system (€600M+, 600 doctors filing safety complaints \[22\]). Nobody died, but citizens were harmed, public trust eroded, and billions were lost.
 
-These failures are not isolated. Bent Flyvbjerg's study of over 16,000 projects across 136 countries reveals that IT projects carry the worst cost-overrun distribution of any project type, with an average overrun of 447% \[23\]. Only 0.5% of megaprojects hit all three targets: budget, schedule, and benefits. Flyvbjerg's prescription is "Think slow, act fast" \[23\]: invest heavily in planning, where iteration is cheap, then execute rapidly to minimize exposure to disruption during what he calls the "window of doom." This is, in essence, the Specify → Plan → Verify lifecycle applied at the project level. His companion insight, that modular projects (composed of small, repeatable units) dramatically outperform monolithic ones, maps directly to Event Modeling's independently verifiable slices: big things made from small things.
+These are not outliers. Bent Flyvbjerg's study of over 16,000 projects across 136 countries reveals that IT projects carry the worst cost-overrun distribution of any project type, with an average overrun of 447% \[23\]. Only 0.5% of megaprojects hit all three targets: budget, schedule, and benefits. Flyvbjerg's prescription is "Think slow, act fast" \[23\]: invest heavily in planning, where iteration is cheap, then execute rapidly to minimize exposure to disruption. This is, in essence, the Specify → Plan → Verify lifecycle applied at the project level. His companion insight, that modular projects dramatically outperform monolithic ones, maps directly to Event Modeling's independently verifiable slices: big things made from small things.
 
 > "Think slow, act fast. That's the secret of success." — Bent Flyvbjerg \[23\]
 
-<img src="two-paths-to-professionalization.svg" alt="Two Paths to Professionalization" width="100%">
+![Two Paths to Professionalization](two-paths-to-professionalization.svg)
 
 *Different triggers, different timescales, same outcome.*
 
@@ -398,7 +398,7 @@ The transformation is self-reinforcing: formalization enables agents, agents val
 
 Intellectual honesty requires acknowledging what this model does *not* address. These gaps represent significant institutional debt that the software industry has not yet begun to repay:
 
-<img src="wardley-map-institutional-maturity.svg" alt="Wardley Map: Institutional Maturity of Software Civil Engineering" width="100%">
+![Wardley Map: Institutional Maturity of Software Civil Engineering](wardley-map-institutional-maturity.svg)
 
 *Specification and verification are evolving; institutional foundations remain stuck in Genesis.*
 
