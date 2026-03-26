@@ -156,10 +156,10 @@ Event Modeling solves the *behavioral specification* problem. It provides the so
 
 But civil engineering blueprints are not the only specification artifact. They are supplemented by structural calculations, material specifications, and building code compliance documentation. Event Modeling, in isolation, specifies behavior but says nothing about:
 
-- **Performance characteristics** — latency, throughput, scalability under load
-- **Operational requirements** — resilience, failover, resource budgets
-- **Security and compliance invariants** — encryption, access control, audit requirements
-- **Technical substrate properties** — how specific technology choices affect system behavior at scale
+- **Performance characteristics**: latency, throughput, scalability under load
+- **Operational requirements**: resilience, failover, resource budgets
+- **Security and compliance invariants**: encryption, access control, audit requirements
+- **Technical substrate properties**: how specific technology choices affect system behavior at scale
 
 These gaps must be filled for the engineering analogy to hold.
 
