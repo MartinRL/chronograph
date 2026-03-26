@@ -8,4 +8,4 @@ Long-form essays on software engineering, architecture, and the future of the di
 
 ## Articles
 
-- [[software-civil-engineering|Software Civil Engineering: What Bridges Can Teach Us About Building Software in the Age of AI Agents]]
+- [[software-civil-engineering|Software Civil Engineering: From Craft to Discipline: Why Agentic AI Demands the Professionalization of Software Production]]
