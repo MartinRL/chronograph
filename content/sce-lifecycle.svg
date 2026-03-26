@@ -84,6 +84,6 @@
   <text x="100" y="520" text-anchor="middle" font-size="9" fill="#7f8c8d" font-style="italic">≈ Construction by licensed contractors</text>
 
   <text x="20" y="176" text-anchor="start" font-size="9" fill="#7f8c8d" font-style="italic">≈ Building inspection,</text>
-  <text x="20" y="188" text-anchor="start" font-size="9" fill="#7f8c8d" font-style="italic">structural monitoring</text>
+  <text x="20" y="188" text-anchor="start" font-size="9" fill="#7f8c8d" font-style="italic">structural/IoT monitoring</text>
 
 </svg>
