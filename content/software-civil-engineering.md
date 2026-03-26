@@ -126,7 +126,7 @@ Spec-Driven Development (SDD) addresses this by making the specification the pri
 
 ### 3.2 Event Modeling as SDD done right
 
-Event Modeling, as developed by Adam Dymitruk, resolves the interface problem that plagued earlier formal methods \[8\]. It expresses system behavior in a language that domain experts, product owners, and engineers can all read: commands, events, and views arranged on a timeline. Yet it is sufficiently formal to be deterministic and verifiable.
+Event Modeling, as developed by Adam Dymitruk, resolves the interface problem that plagued earlier formal methods \[8\]. It expresses system behavior in a language that domain experts, product managers, and engineers can all read: commands, events, and views arranged on a timeline. Yet it is sufficiently formal to be deterministic and verifiable.
 
 An Event Model specifies:
 
