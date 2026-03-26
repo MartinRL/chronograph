@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 660 660" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto-start-reverse">
+      <path d="M0,0 L8,3 L0,6" fill="#2c3e50"/>
+    </marker>
+  </defs>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- CENTER LABEL                                             -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <text x="330" y="316" text-anchor="middle" font-size="13" font-weight="700" fill="#2c3e50">Specification</text>
+  <text x="330" y="334" text-anchor="middle" font-size="13" font-weight="700" fill="#2c3e50">is the product.</text>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- FIVE PHASES arranged clockwise on a circle               -->
+  <!-- Circle center: (330, 325), radius ~200                   -->
+  <!-- Positions (clockwise from top):                          -->
+  <!--   Specify:  top center        (330, 80)                  -->
+  <!--   Plan:     right             (555, 230)                 -->
+  <!--   Verify:   bottom-right      (490, 470)                 -->
+  <!--   Apply:    bottom-left       (170, 470)                 -->
+  <!--   Observe:  left              (105, 230)                 -->
+  <!-- ════════════════════════════════════════════════════════ -->
+
+  <!-- ═══ 1. SPECIFY (top) ═══ -->
+  <rect x="255" y="52" width="150" height="56" rx="8" fill="#3498db"/>
+  <text x="330" y="78" text-anchor="middle" font-size="15" font-weight="600" fill="#fff">Specify</text>
+  <text x="330" y="96" text-anchor="middle" font-size="9" fill="#aed6f1">blueprints + calculations + codes</text>
+
+  <!-- ═══ 2. PLAN (right) ═══ -->
+  <rect x="480" y="200" width="150" height="56" rx="8" fill="#8e44ad"/>
+  <text x="555" y="226" text-anchor="middle" font-size="15" font-weight="600" fill="#fff">Plan</text>
+  <text x="555" y="244" text-anchor="middle" font-size="9" fill="#d7bde2">analysis + behavioral simulation</text>
+
+  <!-- ═══ 3. VERIFY (bottom-right) ═══ -->
+  <rect x="420" y="440" width="150" height="56" rx="8" fill="#27ae60"/>
+  <text x="495" y="466" text-anchor="middle" font-size="15" font-weight="600" fill="#fff">Verify</text>
+  <text x="495" y="484" text-anchor="middle" font-size="9" fill="#a9dfbf">compliance review</text>
+
+  <!-- ═══ 4. APPLY (bottom-left) ═══ -->
+  <rect x="90" y="440" width="150" height="56" rx="8" fill="#e67e22"/>
+  <text x="165" y="466" text-anchor="middle" font-size="15" font-weight="600" fill="#fff">Apply</text>
+  <text x="165" y="484" text-anchor="middle" font-size="9" fill="#fad7a0">construction by agents</text>
+
+  <!-- ═══ 5. OBSERVE (left) ═══ -->
+  <rect x="30" y="200" width="150" height="56" rx="8" fill="#c0392b"/>
+  <text x="105" y="226" text-anchor="middle" font-size="15" font-weight="600" fill="#fff">Observe</text>
+  <text x="105" y="244" text-anchor="middle" font-size="9" fill="#f5b7b1">inspection + drift detection</text>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- CURVED ARROWS connecting phases clockwise                -->
+  <!-- Using arcs between phase boxes                           -->
+  <!-- ════════════════════════════════════════════════════════ -->
+
+  <!-- Specify → Plan (top to right) -->
+  <path d="M405,85 C460,95 510,140 520,198" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Plan → Verify (right to bottom-right) -->
+  <path d="M590,256 C600,320 570,400 540,438" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Verify → Apply (bottom-right to bottom-left) -->
+  <path d="M420,475 C370,505 290,505 240,475" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Apply → Observe (bottom-left to left) -->
+  <path d="M100,440 C75,390 60,310 72,258" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Observe → Specify (left to top, closing the loop) -->
+  <path d="M120,198 C135,140 200,80 253,68" fill="none" stroke="#2c3e50" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Drift feedback label on Observe → Specify arrow -->
+  <text x="142" y="118" text-anchor="start" font-size="8" fill="#c0392b" font-style="italic">drift detected →</text>
+  <text x="142" y="130" text-anchor="start" font-size="8" fill="#c0392b" font-style="italic">specification refinement</text>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- CIVIL ENGINEERING ANALOGS (outside the circle)           -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <text x="330" y="36" text-anchor="middle" font-size="9" fill="#7f8c8d" font-style="italic">≈ Architectural blueprints + structural calculations + building codes</text>
+
+  <text x="640" y="176" text-anchor="end" font-size="9" fill="#7f8c8d" font-style="italic">≈ Structural analysis,</text>
+  <text x="640" y="188" text-anchor="end" font-size="9" fill="#7f8c8d" font-style="italic">bill of materials</text>
+
+  <text x="590" y="520" text-anchor="middle" font-size="9" fill="#7f8c8d" font-style="italic">≈ Code compliance review</text>
+
+  <text x="100" y="520" text-anchor="middle" font-size="9" fill="#7f8c8d" font-style="italic">≈ Construction by licensed contractors</text>
+
+  <text x="20" y="176" text-anchor="start" font-size="9" fill="#7f8c8d" font-style="italic">≈ Building inspection,</text>
+  <text x="20" y="188" text-anchor="start" font-size="9" fill="#7f8c8d" font-style="italic">structural monitoring</text>
+
+</svg>

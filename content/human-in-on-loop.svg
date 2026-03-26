@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 960 400" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto-start-reverse">
+      <path d="M0,0 L7,2.5 L0,5" fill="#7f8c8d"/>
+    </marker>
+    <marker id="arr-dark" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto-start-reverse">
+      <path d="M0,0 L7,2.5 L0,5" fill="#2c3e50"/>
+    </marker>
+    <!-- Human icon (head + shoulders silhouette) -->
+    <symbol id="human" viewBox="0 0 32 40">
+      <circle cx="16" cy="10" r="8" fill="currentColor"/>
+      <path d="M2,40 C2,26 30,26 30,40" fill="currentColor"/>
+    </symbol>
+    <!-- Agent icon (simple bot shape) -->
+    <symbol id="agent" viewBox="0 0 28 28">
+      <rect x="2" y="6" width="24" height="18" rx="4" fill="currentColor"/>
+      <circle cx="10" cy="15" r="2.5" fill="#fff"/>
+      <circle cx="18" cy="15" r="2.5" fill="#fff"/>
+      <rect x="11" y="2" width="6" height="6" rx="2" fill="currentColor"/>
+    </symbol>
+  </defs>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- PANEL BACKGROUNDS                                        -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- Left panel: muted -->
+  <rect x="10" y="10" width="455" height="310" rx="8" fill="#f4f6f7" opacity="0.5"/>
+  <!-- Right panel: vibrant tint -->
+  <rect x="495" y="10" width="455" height="310" rx="8" fill="#eaf2f8" opacity="0.5"/>
+  <!-- Divider -->
+  <line x1="480" y1="30" x2="480" y2="310" stroke="#d5dbdb" stroke-width="1" stroke-dasharray="6,4"/>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- LEFT PANEL: Human in the Loop                            -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <text x="237" y="40" text-anchor="middle" font-size="14" font-weight="700" fill="#2c3e50">Human in the Loop</text>
+
+  <!-- Sequential chain: Agent → Human → Agent → Human → Agent -->
+  <!-- Row centered at y=160 -->
+
+  <!-- Agent 1 -->
+  <use href="#agent" x="42" y="136" width="28" height="28" color="#8e44ad" opacity="0.5"/>
+  <text x="56" y="178" text-anchor="middle" font-size="8" fill="#95a5a6">Agent</text>
+
+  <!-- Arrow -->
+  <line x1="74" y1="150" x2="98" y2="150" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Human 1 (reviewing) -->
+  <use href="#human" x="103" y="132" width="28" height="36" color="#2c3e50"/>
+  <text x="117" y="178" text-anchor="middle" font-size="7" fill="#c0392b">review</text>
+
+  <!-- Arrow -->
+  <line x1="135" y1="150" x2="159" y2="150" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Agent 2 -->
+  <use href="#agent" x="164" y="136" width="28" height="28" color="#8e44ad" opacity="0.5"/>
+  <text x="178" y="178" text-anchor="middle" font-size="8" fill="#95a5a6">Agent</text>
+
+  <!-- Arrow -->
+  <line x1="196" y1="150" x2="220" y2="150" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Human 2 (reviewing) -->
+  <use href="#human" x="225" y="132" width="28" height="36" color="#2c3e50"/>
+  <text x="239" y="178" text-anchor="middle" font-size="7" fill="#c0392b">review</text>
+
+  <!-- Arrow -->
+  <line x1="257" y1="150" x2="281" y2="150" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Agent 3 -->
+  <use href="#agent" x="286" y="136" width="28" height="28" color="#8e44ad" opacity="0.5"/>
+  <text x="300" y="178" text-anchor="middle" font-size="8" fill="#95a5a6">Agent</text>
+
+  <!-- Arrow -->
+  <line x1="318" y1="150" x2="342" y2="150" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Human 3 (reviewing) -->
+  <use href="#human" x="347" y="132" width="28" height="36" color="#2c3e50"/>
+  <text x="361" y="178" text-anchor="middle" font-size="7" fill="#c0392b">review</text>
+
+  <!-- Arrow to output -->
+  <line x1="379" y1="150" x2="403" y2="150" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Output -->
+  <rect x="408" y="140" width="40" height="20" rx="3" fill="#bdc3c7"/>
+  <text x="428" y="154" text-anchor="middle" font-size="7" fill="#fff">output</text>
+
+  <!-- "Serial bottleneck" annotation -->
+  <text x="237" y="210" text-anchor="middle" font-size="9" fill="#95a5a6" font-style="italic">serial: each artifact passes through human</text>
+
+  <!-- Labels -->
+  <text x="237" y="280" text-anchor="middle" font-size="16" font-weight="700" fill="#7f8c8d">Copilot mode</text>
+  <text x="237" y="300" text-anchor="middle" font-size="22" font-weight="700" fill="#bdc3c7">10%</text>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- RIGHT PANEL: Human on the Loop                           -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <text x="722" y="40" text-anchor="middle" font-size="14" font-weight="700" fill="#2c3e50">Human on the Loop</text>
+
+  <!-- Human at top, monitoring -->
+  <use href="#human" x="706" y="52" width="32" height="40" color="#2c3e50"/>
+
+  <!-- Dashboard next to human -->
+  <rect x="750" y="56" width="50" height="30" rx="3" fill="#fff" stroke="#d5dbdb" stroke-width="1"/>
+  <rect x="755" y="62" width="12" height="8" rx="1" fill="#27ae60" opacity="0.5"/>
+  <rect x="770" y="62" width="12" height="8" rx="1" fill="#27ae60" opacity="0.5"/>
+  <rect x="785" y="62" width="10" height="8" rx="1" fill="#e67e22" opacity="0.5"/>
+  <rect x="755" y="74" width="40" height="4" rx="1" fill="#eaecee"/>
+  <text x="775" y="90" text-anchor="middle" font-size="6" fill="#95a5a6">dashboard</text>
+
+  <!-- Three harness elements -->
+  <!-- Specifications (blue) -->
+  <rect x="555" y="130" width="90" height="36" rx="5" fill="#3498db"/>
+  <text x="600" y="152" text-anchor="middle" font-size="10" font-weight="500" fill="#fff">Specifications</text>
+
+  <!-- Constraints (orange) -->
+  <rect x="677" y="130" width="90" height="36" rx="5" fill="#e67e22"/>
+  <text x="722" y="152" text-anchor="middle" font-size="10" font-weight="500" fill="#fff">Constraints</text>
+
+  <!-- Verification (green) -->
+  <rect x="799" y="130" width="90" height="36" rx="5" fill="#27ae60"/>
+  <text x="844" y="152" text-anchor="middle" font-size="10" font-weight="500" fill="#fff">Verification</text>
+
+  <!-- Arrows: Human → harness elements -->
+  <line x1="712" y1="92" x2="600" y2="128" stroke="#2c3e50" stroke-width="1.2" marker-end="url(#arr-dark)"/>
+  <line x1="722" y1="92" x2="722" y2="128" stroke="#2c3e50" stroke-width="1.2" marker-end="url(#arr-dark)"/>
+  <line x1="732" y1="92" x2="844" y2="128" stroke="#2c3e50" stroke-width="1.2" marker-end="url(#arr-dark)"/>
+
+  <!-- Agents working in parallel below the harness -->
+  <!-- Agent row at y=220 -->
+  <use href="#agent" x="556" y="210" width="24" height="24" color="#8e44ad"/>
+  <use href="#agent" x="596" y="210" width="24" height="24" color="#8e44ad"/>
+  <use href="#agent" x="636" y="210" width="24" height="24" color="#8e44ad"/>
+  <use href="#agent" x="676" y="210" width="24" height="24" color="#8e44ad"/>
+  <use href="#agent" x="716" y="210" width="24" height="24" color="#8e44ad"/>
+  <use href="#agent" x="756" y="210" width="24" height="24" color="#8e44ad"/>
+  <use href="#agent" x="796" y="210" width="24" height="24" color="#8e44ad"/>
+  <use href="#agent" x="836" y="210" width="24" height="24" color="#8e44ad"/>
+
+  <!-- Arrows: harness → agents (showing agents are governed by the harness) -->
+  <line x1="600" y1="166" x2="580" y2="208" stroke="#3498db" stroke-width="0.8" opacity="0.4"/>
+  <line x1="600" y1="166" x2="620" y2="208" stroke="#3498db" stroke-width="0.8" opacity="0.4"/>
+  <line x1="722" y1="166" x2="700" y2="208" stroke="#e67e22" stroke-width="0.8" opacity="0.4"/>
+  <line x1="722" y1="166" x2="740" y2="208" stroke="#e67e22" stroke-width="0.8" opacity="0.4"/>
+  <line x1="844" y1="166" x2="820" y2="208" stroke="#27ae60" stroke-width="0.8" opacity="0.4"/>
+  <line x1="844" y1="166" x2="860" y2="208" stroke="#27ae60" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- More connecting lines to show parallel operation -->
+  <line x1="600" y1="166" x2="560" y2="208" stroke="#3498db" stroke-width="0.8" opacity="0.3"/>
+  <line x1="722" y1="166" x2="660" y2="208" stroke="#e67e22" stroke-width="0.8" opacity="0.3"/>
+  <line x1="722" y1="166" x2="780" y2="208" stroke="#e67e22" stroke-width="0.8" opacity="0.3"/>
+  <line x1="844" y1="166" x2="850" y2="208" stroke="#27ae60" stroke-width="0.8" opacity="0.3"/>
+
+  <!-- "Parallel" annotation -->
+  <text x="722" y="252" text-anchor="middle" font-size="9" fill="#95a5a6" font-style="italic">harness governs agents in parallel; human manages, not micro-manages</text>
+
+  <!-- Labels -->
+  <text x="722" y="286" text-anchor="middle" font-size="22" font-weight="700" fill="#2471a3">10×</text>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- BOTTOM BRIDGE                                            -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <rect x="40" y="340" width="880" height="44" rx="6" fill="#2c3e50"/>
+  <text x="480" y="360" text-anchor="middle" font-size="11" fill="#ecf0f1">The bridge: </text>
+  <text x="480" y="376" text-anchor="middle" font-size="11" font-weight="600" fill="#ecf0f1">formal specification + verification + accountability = Software Civil Engineering</text>
+
+</svg>

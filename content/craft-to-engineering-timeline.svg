@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#7f8c8d"/>
+    </marker>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="116%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="480" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">Craft-to-Engineering Timeline</text>
+
+  <!-- === TIMELINE ROW === -->
+
+  <!-- Stage 1: Manual Ops -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="62" width="200" height="52" rx="6" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1.5"/>
+    <text x="160" y="85" text-anchor="middle" font-size="14" font-weight="600" fill="#2c3e50">Manual Ops / SSH</text>
+    <text x="160" y="103" text-anchor="middle" font-size="11" fill="#7f8c8d" font-style="italic">craft</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <line x1="264" y1="88" x2="330" y2="88" stroke="#7f8c8d" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 2: Config Management -->
+  <g filter="url(#shadow)">
+    <rect x="334" y="62" width="240" height="52" rx="6" fill="#eaf2f8" stroke="#2471a3" stroke-width="1.5"/>
+    <text x="454" y="85" text-anchor="middle" font-size="14" font-weight="600" fill="#1a5276">Ansible / Chef / Puppet</text>
+    <text x="454" y="103" text-anchor="middle" font-size="11" fill="#2471a3" font-style="italic">codified craft</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <line x1="578" y1="88" x2="644" y2="88" stroke="#7f8c8d" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 3: Terraform -->
+  <g filter="url(#shadow)">
+    <rect x="648" y="62" width="240" height="52" rx="6" fill="#2471a3" stroke="#1a5276" stroke-width="1.5"/>
+    <text x="768" y="85" text-anchor="middle" font-size="14" font-weight="600" fill="#fff">Terraform / IaC</text>
+    <text x="768" y="103" text-anchor="middle" font-size="11" fill="#d6eaf8" font-style="italic">engineering discipline</text>
+  </g>
+
+  <!-- === GRID SECTION === -->
+
+  <!-- Column headers -->
+  <text x="160" y="155" text-anchor="middle" font-size="12" font-weight="600" fill="#7f8c8d">Manual Ops</text>
+  <text x="454" y="155" text-anchor="middle" font-size="12" font-weight="600" fill="#7f8c8d">Config Mgmt</text>
+  <text x="768" y="155" text-anchor="middle" font-size="12" font-weight="600" fill="#7f8c8d">Terraform</text>
+
+  <!-- Pillar label column -->
+  <text x="38" y="155" font-size="11" font-weight="600" fill="#2c3e50" text-decoration="underline">PILLAR</text>
+
+  <!-- Horizontal divider below headers -->
+  <line x1="30" y1="164" x2="900" y2="164" stroke="#d5dbdb" stroke-width="1"/>
+
+  <!-- Row 1: Formal specification -->
+  <text x="38" y="200" font-size="13" fill="#2c3e50">Formal specification</text>
+  <!-- Manual: X -->
+  <circle cx="160" cy="196" r="10" fill="none" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="154" y1="190" x2="166" y2="202" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="166" y1="190" x2="154" y2="202" stroke="#bdc3c7" stroke-width="1.5"/>
+  <!-- Config: partial -->
+  <circle cx="454" cy="196" r="10" fill="none" stroke="#e67e22" stroke-width="1.5"/>
+  <path d="M454,186 A10,10 0 0,1 454,206" fill="#e67e22"/>
+  <!-- Terraform: check -->
+  <circle cx="768" cy="196" r="10" fill="#27ae60"/>
+  <polyline points="762,196 766,200 774,192" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <line x1="30" y1="216" x2="900" y2="216" stroke="#ecf0f1" stroke-width="1"/>
+
+  <!-- Row 2: Material datasheets -->
+  <text x="38" y="250" font-size="13" fill="#2c3e50">Material datasheets</text>
+  <text x="38" y="264" font-size="10" fill="#95a5a6" font-style="italic">(providers)</text>
+  <!-- Manual: X -->
+  <circle cx="160" cy="250" r="10" fill="none" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="154" y1="244" x2="166" y2="256" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="166" y1="244" x2="154" y2="256" stroke="#bdc3c7" stroke-width="1.5"/>
+  <!-- Config: X -->
+  <circle cx="454" cy="250" r="10" fill="none" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="448" y1="244" x2="460" y2="256" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="460" y1="244" x2="448" y2="256" stroke="#bdc3c7" stroke-width="1.5"/>
+  <!-- Terraform: check -->
+  <circle cx="768" cy="250" r="10" fill="#27ae60"/>
+  <polyline points="762,250 766,254 774,246" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <line x1="30" y1="276" x2="900" y2="276" stroke="#ecf0f1" stroke-width="1"/>
+
+  <!-- Row 3: Codes and norms -->
+  <text x="38" y="308" font-size="13" fill="#2c3e50">Codes and norms</text>
+  <!-- Manual: X -->
+  <circle cx="160" cy="304" r="10" fill="none" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="154" y1="298" x2="166" y2="310" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="166" y1="298" x2="154" y2="310" stroke="#bdc3c7" stroke-width="1.5"/>
+  <!-- Config: X -->
+  <circle cx="454" cy="304" r="10" fill="none" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="448" y1="298" x2="460" y2="310" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="460" y1="298" x2="448" y2="310" stroke="#bdc3c7" stroke-width="1.5"/>
+  <!-- Terraform: X -->
+  <circle cx="768" cy="304" r="10" fill="none" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="762" y1="298" x2="774" y2="310" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="774" y1="298" x2="762" y2="310" stroke="#bdc3c7" stroke-width="1.5"/>
+
+  <line x1="30" y1="324" x2="900" y2="324" stroke="#ecf0f1" stroke-width="1"/>
+
+  <!-- Row 4: Simulation -->
+  <text x="38" y="358" font-size="13" fill="#2c3e50">Simulation</text>
+  <text x="38" y="372" font-size="10" fill="#95a5a6" font-style="italic">(plan before apply)</text>
+  <!-- Manual: X -->
+  <circle cx="160" cy="358" r="10" fill="none" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="154" y1="352" x2="166" y2="364" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="166" y1="352" x2="154" y2="364" stroke="#bdc3c7" stroke-width="1.5"/>
+  <!-- Config: X -->
+  <circle cx="454" cy="358" r="10" fill="none" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="448" y1="352" x2="460" y2="364" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="460" y1="352" x2="448" y2="364" stroke="#bdc3c7" stroke-width="1.5"/>
+  <!-- Terraform: check -->
+  <circle cx="768" cy="358" r="10" fill="#27ae60"/>
+  <polyline points="762,358 766,362 774,354" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <line x1="30" y1="384" x2="900" y2="384" stroke="#ecf0f1" stroke-width="1"/>
+
+  <!-- Row 5: Professional licensure -->
+  <text x="38" y="414" font-size="13" fill="#2c3e50">Professional licensure</text>
+  <!-- Manual: X -->
+  <circle cx="160" cy="410" r="10" fill="none" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="154" y1="404" x2="166" y2="416" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="166" y1="404" x2="154" y2="416" stroke="#bdc3c7" stroke-width="1.5"/>
+  <!-- Config: X -->
+  <circle cx="454" cy="410" r="10" fill="none" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="448" y1="404" x2="460" y2="416" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="460" y1="404" x2="448" y2="416" stroke="#bdc3c7" stroke-width="1.5"/>
+  <!-- Terraform: X -->
+  <circle cx="768" cy="410" r="10" fill="none" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="762" y1="404" x2="774" y2="416" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="774" y1="404" x2="762" y2="416" stroke="#bdc3c7" stroke-width="1.5"/>
+
+  <line x1="30" y1="432" x2="900" y2="432" stroke="#ecf0f1" stroke-width="1"/>
+
+  <!-- Row 6: Formal education -->
+  <text x="38" y="462" font-size="13" fill="#2c3e50">Formal education</text>
+  <!-- Manual: X -->
+  <circle cx="160" cy="458" r="10" fill="none" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="154" y1="452" x2="166" y2="464" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="166" y1="452" x2="154" y2="464" stroke="#bdc3c7" stroke-width="1.5"/>
+  <!-- Config: X -->
+  <circle cx="454" cy="458" r="10" fill="none" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="448" y1="452" x2="460" y2="464" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="460" y1="452" x2="448" y2="464" stroke="#bdc3c7" stroke-width="1.5"/>
+  <!-- Terraform: X -->
+  <circle cx="768" cy="458" r="10" fill="none" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="762" y1="452" x2="774" y2="464" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="774" y1="452" x2="762" y2="464" stroke="#bdc3c7" stroke-width="1.5"/>
+
+  <!-- Bottom annotation -->
+  <text x="480" y="505" text-anchor="middle" font-size="12" fill="#566573">Each stage lights up more pillars. Three remain dark across all stages.</text>
+
+</svg>
