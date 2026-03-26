@@ -130,9 +130,9 @@ Event Modeling, as developed by Adam Dymitruk, resolves the interface problem th
 
 An Event Model specifies:
 
-- **Commands** — what actions the system accepts
-- **Events** — what facts the system records (immutable, ordered)
-- **Read Models / Views** — how the system presents information derived from events
+- **Commands**: what actions the system accepts
+- **Events**: what facts the system records (immutable, ordered)
+- **Read Models / Views**: how the system presents information derived from events
 
 Each vertical "slice" through the model constitutes a Given-When-Then specification:
 
