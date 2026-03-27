@@ -55,7 +55,7 @@ The vocabulary for this shift already exists, borrowed from autonomous systems d
 ![Human in the Loop vs. Human on the Loop](human-in-on-loop.svg)
 *From micro-managing agents to managing the engineering process.*
 
-This is why the current excitement around LLM-based code generation, while justified, understates the real opportunity. Generative AI has made the construction workers faster, but the bottleneck in civil engineering was never the bricklaying. It was the blueprints, the structural calculations, the material specifications, the building codes, and the accountability framework. Software faces the same asymmetry: faster code production addresses one of the six pillars outlined below and leaves the other five untouched.
+This is why the current excitement around LLM-based code generation, while justified, understates the real opportunity. Generative AI has made the construction workers faster, but the bottleneck in civil engineering was never the bricklaying. It was the blueprints, the structural calculations, the material specifications, the building codes, and the accountability framework. Software faces the same asymmetry: faster code production accelerates the construction, but none of the six disciplinary pillars outlined below.
 
 ![The Six Pillars Asymmetry](six-pillars-asymmetry.svg)
 
