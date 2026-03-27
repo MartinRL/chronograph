@@ -202,7 +202,7 @@ This separation is what makes simulation possible. Just as structural engineers 
 
 This is `terraform plan` for domain logic: a pure preview of what *would* happen, runnable against a thousand scenarios without touching a database.
 
-The mapping to Event Modeling is direct. Each Given-When-Then slice in an Event Model maps naturally to a Decider invocation:
+The mapping to Event Modeling is direct. Each Given-When-Then verification in an Event Model maps naturally to a Decider invocation:
 
 - **Given** prior events → the Decider's current state (via its `evolve` function)
 - **When** a command is issued → the Decider's input
