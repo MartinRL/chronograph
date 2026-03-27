@@ -143,7 +143,7 @@ An Event Model specifies:
 - **Events**: what facts the system records (immutable, ordered)
 - **Read Models / Views**: how the system presents information derived from events
 
-Each vertical "slice" through the model constitutes a Given-When-Then specification:
+Each vertical "slice" through the model constitutes one or more Given-When-Then specifications:
 
 - **Given** a set of prior events (system state)
 - **When** a command is issued
