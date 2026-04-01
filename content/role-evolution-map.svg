@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 500" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
 
   <!-- Column headers -->
-  <text x="110" y="42" text-anchor="middle" font-size="14" font-weight="700" fill="#2c3e50">Current Roles</text>
+  <text x="130" y="42" text-anchor="middle" font-size="14" font-weight="700" fill="#2c3e50">Current Roles</text>
   <text x="810" y="42" text-anchor="middle" font-size="14" font-weight="700" fill="#2c3e50">New Archetypes</text>
 
   <!-- ===== LEFT BANDS (x=40..220, neutral gray) ===== -->
@@ -9,109 +9,129 @@
   <rect x="40" y="70" width="180" height="50" rx="5" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
   <text x="130" y="100" text-anchor="middle" font-size="13" font-weight="500" fill="#2c3e50">Developer</text>
 
-  <!-- Business Analyst: y=132, h=50 -->
-  <rect x="40" y="132" width="180" height="50" rx="5" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="130" y="162" text-anchor="middle" font-size="13" font-weight="500" fill="#2c3e50">Business Analyst</text>
+  <!-- Business Analyst: y=130, h=50 -->
+  <rect x="40" y="130" width="180" height="50" rx="5" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="130" y="160" text-anchor="middle" font-size="13" font-weight="500" fill="#2c3e50">Business Analyst</text>
 
-  <!-- Software Architect: y=194, h=50 -->
-  <rect x="40" y="194" width="180" height="50" rx="5" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="130" y="224" text-anchor="middle" font-size="13" font-weight="500" fill="#2c3e50">Software Architect</text>
+  <!-- Software Architect: y=190, h=50 -->
+  <rect x="40" y="190" width="180" height="50" rx="5" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="130" y="220" text-anchor="middle" font-size="13" font-weight="500" fill="#2c3e50">Software Architect</text>
 
-  <!-- Quality Assurer: y=256, h=50 -->
-  <rect x="40" y="256" width="180" height="50" rx="5" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="130" y="286" text-anchor="middle" font-size="13" font-weight="500" fill="#2c3e50">Quality Assurer</text>
+  <!-- UX Designer: y=250, h=50 -->
+  <rect x="40" y="250" width="180" height="50" rx="5" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="130" y="280" text-anchor="middle" font-size="13" font-weight="500" fill="#2c3e50">UX Designer</text>
 
-  <!-- SRE/Platform Engineer: y=318, h=50 -->
-  <rect x="40" y="318" width="180" height="50" rx="5" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="130" y="348" text-anchor="middle" font-size="12" font-weight="500" fill="#2c3e50">SRE / Platform Engineer</text>
+  <!-- Quality Assurer: y=310, h=50 -->
+  <rect x="40" y="310" width="180" height="50" rx="5" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="130" y="340" text-anchor="middle" font-size="13" font-weight="500" fill="#2c3e50">Quality Assurer</text>
 
-  <!-- Security Engineer: y=380, h=50 -->
-  <rect x="40" y="380" width="180" height="50" rx="5" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="130" y="410" text-anchor="middle" font-size="13" font-weight="500" fill="#2c3e50">Security Engineer</text>
+  <!-- SRE/Platform Engineer: y=370, h=50 -->
+  <rect x="40" y="370" width="180" height="50" rx="5" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="130" y="400" text-anchor="middle" font-size="12" font-weight="500" fill="#2c3e50">SRE / Platform Engineer</text>
+
+  <!-- Security Engineer: y=430, h=50 -->
+  <rect x="40" y="430" width="180" height="50" rx="5" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="130" y="460" text-anchor="middle" font-size="13" font-weight="500" fill="#2c3e50">Security Engineer</text>
 
   <!-- ===== RIGHT BANDS (x=720..900, colored) ===== -->
-  <!-- Domain Engineer: y=92, h=75 (receives 1.5 units) -->
-  <rect x="720" y="92" width="180" height="75" rx="5" fill="#27ae60" opacity="0.9" stroke="#1e8449" stroke-width="1"/>
-  <text x="810" y="135" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">Domain Engineer</text>
+  <!-- Domain Engineer: y=90, h=65 -->
+  <rect x="720" y="90" width="180" height="65" rx="5" fill="#27ae60" opacity="0.9" stroke="#1e8449" stroke-width="1"/>
+  <text x="810" y="128" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">Domain Engineer</text>
 
-  <!-- Harness Engineer: y=183, h=75 (receives 1.5 units) -->
-  <rect x="720" y="183" width="180" height="75" rx="5" fill="#e67e22" opacity="0.9" stroke="#ca6f1e" stroke-width="1"/>
-  <text x="810" y="226" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">Harness Engineer</text>
+  <!-- Experience Engineer: y=165, h=55 -->
+  <rect x="720" y="165" width="180" height="55" rx="5" fill="#16a085" opacity="0.9" stroke="#138d75" stroke-width="1"/>
+  <text x="810" y="198" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">Experience Engineer</text>
 
-  <!-- Quality Engineer: y=274, h=100 (receives 2.0 units) -->
-  <rect x="720" y="274" width="180" height="100" rx="5" fill="#8e44ad" opacity="0.9" stroke="#7d3c98" stroke-width="1"/>
-  <text x="810" y="330" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">Quality Engineer</text>
+  <!-- Harness Engineer: y=230, h=70 -->
+  <rect x="720" y="230" width="180" height="70" rx="5" fill="#e67e22" opacity="0.9" stroke="#ca6f1e" stroke-width="1"/>
+  <text x="810" y="270" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">Harness Engineer</text>
 
-  <!-- Specification Lead: y=390, h=50 (receives 1.0 unit) -->
-  <rect x="720" y="390" width="180" height="50" rx="5" fill="#2980b9" opacity="0.9" stroke="#2471a3" stroke-width="1"/>
-  <text x="810" y="420" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">Specification Lead</text>
+  <!-- Quality Engineer: y=310, h=85 -->
+  <rect x="720" y="310" width="180" height="85" rx="5" fill="#8e44ad" opacity="0.9" stroke="#7d3c98" stroke-width="1"/>
+  <text x="810" y="358" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">Quality Engineer</text>
+
+  <!-- Specification Lead: y=405, h=50 -->
+  <rect x="720" y="405" width="180" height="50" rx="5" fill="#2980b9" opacity="0.9" stroke="#2471a3" stroke-width="1"/>
+  <text x="810" y="435" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">Specification Lead</text>
 
   <!-- ===== FLOWS (bezier curves, colored by destination) ===== -->
   <!--
     Left bands exit at x=220, right bands start at x=720.
     Control points at cx=440 for smooth S-curves.
 
-    Developer (y=70..120):
-      top half (70..95)  → Harness Engineer (183..208)
-      bottom half (95..120) → Specification Lead (390..415)
+    Developer (y=70..120) splits THREE ways:
+      top third (70..87)     → Harness Engineer (230..252)
+      mid third (87..103)    → Experience Engineer (165..186)  [engineering root]
+      bottom third (103..120) → Specification Lead (405..427)
 
-    Business Analyst (y=132..182):
-      all (132..182) → Domain Engineer (92..142)
+    Business Analyst (y=130..180):
+      all → Domain Engineer (90..140)
 
-    Software Architect (y=194..244):
-      top half (194..219) → Domain Engineer (142..167)
-      bottom half (219..244) → Specification Lead (415..440)
+    Software Architect (y=190..240):
+      top half (190..215) → Domain Engineer (140..155)
+      bottom half (215..240) → Specification Lead (427..455)
 
-    Quality Assurer (y=256..306):
-      all (256..306) → Quality Engineer (274..324)
+    UX Designer (y=250..300):
+      all → Experience Engineer (186..220)  [design root]
 
-    SRE/Platform (y=318..368):
-      top half (318..343) → Harness Engineer (208..233)
-      bottom half (343..368) → Quality Engineer (324..349)
+    Quality Assurer (y=310..360):
+      all → Quality Engineer (310..360)
 
-    Security (y=380..430):
-      top half (380..405) → Harness Engineer (233..258)
-      bottom half (405..430) → Quality Engineer (349..374)
+    SRE/Platform (y=370..420):
+      top half (370..395) → Harness Engineer (252..278)
+      bottom half (395..420) → Quality Engineer (360..385)
+
+    Security (y=430..480):
+      top half (430..455) → Harness Engineer (278..300)
+      bottom half (455..480) → Quality Engineer (385..395)
   -->
 
   <!-- Developer → Harness Engineer (orange) -->
-  <path d="M220,70 C440,70 440,183 720,183 L720,208 C440,208 440,95 220,95 Z"
+  <path d="M220,70 C440,70 440,230 720,230 L720,252 C440,252 440,87 220,87 Z"
         fill="#e67e22" opacity="0.4"/>
 
+  <!-- Developer → Experience Engineer (teal) [engineering root] -->
+  <path d="M220,87 C440,87 440,165 720,165 L720,186 C440,186 440,103 220,103 Z"
+        fill="#16a085" opacity="0.4"/>
+
   <!-- Developer → Specification Lead (blue) -->
-  <path d="M220,95 C440,95 440,390 720,390 L720,415 C440,415 440,120 220,120 Z"
+  <path d="M220,103 C440,103 440,405 720,405 L720,427 C440,427 440,120 220,120 Z"
         fill="#2980b9" opacity="0.4"/>
 
   <!-- Business Analyst → Domain Engineer (green) -->
-  <path d="M220,132 C440,132 440,92 720,92 L720,142 C440,142 440,182 220,182 Z"
+  <path d="M220,130 C440,130 440,90 720,90 L720,140 C440,140 440,180 220,180 Z"
         fill="#27ae60" opacity="0.4"/>
 
   <!-- Software Architect → Domain Engineer (green) -->
-  <path d="M220,194 C440,194 440,142 720,142 L720,167 C440,167 440,219 220,219 Z"
+  <path d="M220,190 C440,190 440,140 720,140 L720,155 C440,155 440,215 220,215 Z"
         fill="#27ae60" opacity="0.4"/>
 
   <!-- Software Architect → Specification Lead (blue) -->
-  <path d="M220,219 C440,219 440,415 720,415 L720,440 C440,440 440,244 220,244 Z"
+  <path d="M220,215 C440,215 440,427 720,427 L720,455 C440,455 440,240 220,240 Z"
         fill="#2980b9" opacity="0.4"/>
 
+  <!-- UX Designer → Experience Engineer (teal) [design root] -->
+  <path d="M220,250 C440,250 440,186 720,186 L720,220 C440,220 440,300 220,300 Z"
+        fill="#16a085" opacity="0.4"/>
+
   <!-- Quality Assurer → Quality Engineer (purple) -->
-  <path d="M220,256 C440,256 440,274 720,274 L720,324 C440,324 440,306 220,306 Z"
+  <path d="M220,310 C440,310 440,310 720,310 L720,360 C440,360 440,360 220,360 Z"
         fill="#8e44ad" opacity="0.4"/>
 
   <!-- SRE/Platform → Harness Engineer (orange) -->
-  <path d="M220,318 C440,318 440,208 720,208 L720,233 C440,233 440,343 220,343 Z"
+  <path d="M220,370 C440,370 440,252 720,252 L720,278 C440,278 440,395 220,395 Z"
         fill="#e67e22" opacity="0.4"/>
 
   <!-- SRE/Platform → Quality Engineer (purple) -->
-  <path d="M220,343 C440,343 440,324 720,324 L720,349 C440,349 440,368 220,368 Z"
+  <path d="M220,395 C440,395 440,360 720,360 L720,385 C440,385 440,420 220,420 Z"
         fill="#8e44ad" opacity="0.4"/>
 
   <!-- Security → Harness Engineer (orange) -->
-  <path d="M220,380 C440,380 440,233 720,233 L720,258 C440,258 440,405 220,405 Z"
+  <path d="M220,430 C440,430 440,278 720,278 L720,300 C440,300 440,455 220,455 Z"
         fill="#e67e22" opacity="0.4"/>
 
   <!-- Security → Quality Engineer (purple) -->
-  <path d="M220,405 C440,405 440,349 720,349 L720,374 C440,374 440,430 220,430 Z"
+  <path d="M220,455 C440,455 440,385 720,385 L720,395 C440,395 440,480 220,480 Z"
         fill="#8e44ad" opacity="0.4"/>
 
 </svg>
