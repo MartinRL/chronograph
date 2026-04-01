@@ -13,7 +13,7 @@ description: "From Craft to Discipline: Why Agentic AI Demands the Professionali
 
 ---
 
-> **Thesis:** Agentic software engineering already works in craft environments, but it yields incremental gains, not transformational ones. The difference between a 10% productivity improvement and a 10× one lies in the same foundational elements that professionalized civil engineering: formal specification, material science, simulation, verification, and institutional accountability. Agentic AI is the forcing function that makes this professionalization economically inevitable, not merely desirable. Event Modeling, extended with operational and policy constraints, made executable through the Decider pattern, and grounded in Event Sourcing (which provides the immutable, append-only record that makes verification, audit, and drift detection possible not just at design time but in production), operationalized through a Terraform-analogous lifecycle (Specify → Plan → Verify → Apply → Observe), provides the viable path to industrial-grade outcomes. Crucially, this is not unprecedented: infrastructure provisioning has already undergone exactly this transformation, enabled by civil engineering itself.
+> **Thesis:** Agentic software engineering already works in craft environments, but it yields incremental gains, not transformational ones. The difference between a 10% productivity improvement and a 10× one lies in the same foundational elements that professionalized civil engineering: formal specification, material science, simulation, verification, and institutional accountability. Agentic AI is the forcing function that makes this professionalization economically inevitable, not merely desirable. Event Modeling, extended with experience, operational, and policy constraints, made executable through the Decider pattern, and grounded in Event Sourcing (which provides the immutable, append-only record that makes verification, audit, and drift detection possible not just at design time but in production), operationalized through a Terraform-analogous lifecycle (Specify → Plan → Verify → Apply → Observe), provides the viable path to industrial-grade outcomes. Crucially, this is not unprecedented: infrastructure provisioning has already undergone exactly this transformation, enabled by civil engineering itself.
 
 ---
 
@@ -26,7 +26,7 @@ description: "From Craft to Discipline: Why Agentic AI Demands the Professionali
 - This transformation has precedent: **infrastructure provisioning** already moved from craft to engineering via Terraform's declarative lifecycle.
 - **Event Modeling** provides a specification language for product-level behavior that is both human-readable and machine-verifiable.
 - The **Decider pattern** makes Event Modeling specifications executable as pure functions, enabling simulation before implementation, just as structural analysis proves a design before construction.
-- A unified specification model (behavioral + operational + policy layers), operationalized through a **Specify → Plan → Verify → Apply → Observe** lifecycle, extends the infrastructure paradigm to products.
+- A unified specification model (behavioral + experience + operational + policy layers), operationalized through a **Specify → Plan → Verify → Apply → Observe** lifecycle, extends the infrastructure paradigm to products.
 - This narrows the business-technical divide: the specification *becomes* the product strategy.
 - Open gaps remain in professional licensure, formal education, and industry standards: institutional debt the profession has yet to repay.
 
@@ -171,6 +171,7 @@ But civil engineering blueprints are not the only specification artifact. They a
 - **Operational requirements**: resilience, failover, resource budgets
 - **Security and compliance invariants**: encryption, access control, audit requirements
 - **Technical substrate properties**: how specific technology choices affect system behavior at scale
+- **Experience and habitability**: how users perceive, navigate, and interact with the system; accessibility; cognitive load; affordances and feedback
 
 These gaps must be filled for the engineering analogy to hold.
 
@@ -219,7 +220,7 @@ The gap analysis in Section 2 posed six questions; the Terraform lifecycle and t
 
 | Element             | Terraform (Infrastructure)                              | Civil Engineering                                  | Product Level                                                                           |
 | ------------------- | ------------------------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| **Specification**   | `.tf` files — declarative desired state                 | Blueprints + structural calculations               | Event Model + Operational/Policy Constraints                                            |
+| **Specification**   | `.tf` files — declarative desired state                 | Blueprints + structural calculations               | Event Model + Experience Model + Operational/Policy Constraints                         |
 | **Providers**       | Plugins encoding substrate properties (AWS, Azure, GCP) | Material datasheets (steel grades, concrete specs) | Technical substrate profiles (DB latency, broker throughput, framework characteristics) |
 | **State**           | `.tfstate` — what actually exists now                   | As-built documentation                             | Current system state representation for diffing                                         |
 | **Plan**            | `terraform plan` — diff + changeset preview             | Structural analysis, bill of materials             | State diff + Decider-based behavioral simulation                                        |
@@ -235,6 +236,7 @@ Combining these elements produces a unified model:
 ```
 Specification {
     EventModel      → behavior (commands, events, views)
+    ExperienceModel → habitability (interactions, accessibility, cognitive load)
     Deciders        → executable behavioral contracts (pure functions)
     Providers       → technical substrate with known properties
     Constraints     → NFRs, policies, budgets
@@ -251,12 +253,12 @@ This lifecycle — **Specify → Plan → Verify → Apply → Observe** — is 
 ![The Software Civil Engineering Lifecycle](sce-lifecycle.svg)
 *Specify → Plan → Verify → Apply → Observe, with drift feeding back into specification refinement.*
 
-## 5. The Three Specification Layers
+## 5. The Four Specification Layers
 
-The unified specification requires three distinct but integrated layers, each addressing a different class of engineering concern.
+The unified specification requires four distinct but integrated layers, each addressing a different class of engineering concern.
 
-![The Three Specification Layers](three-spec-layers.svg)
-*Three complementary layers constitute the unified specification.*
+![The Four Specification Layers](four-spec-layers.svg)
+*Four complementary layers constitute the unified specification.*
 
 ### 5.1 The Event Model: behavioral specification
 
@@ -291,6 +293,25 @@ This layer captures constraints that must hold everywhere, always, regardless of
 
 **Civil engineering analog:** Building codes and regulations, the non-negotiable constraints that override design preferences.
 
+### 5.4 The Experience Model: habitability specification
+
+A building can satisfy every structural code and still be uninhabitable: poorly lit, acoustically hostile, inaccessible, disorienting. The structural engineer certifies that the building will not fall down; the architect ensures that people will want to live in it. These are distinct competencies addressing distinct failure modes, and civil engineering treats them as such.
+
+Software faces the same duality. A system can pass every Given-When-Then contract, meet every latency budget, and satisfy every compliance invariant while remaining unusable: confusing interactions, missing affordances, inaccessible interfaces, overwhelming cognitive load. The first three specification layers, Behavioral, Operational, and Policy, correspond to the structural engineer's domain. The Experience Model corresponds to the architect's: it specifies the conditions under which the system is not merely correct but *habitable*.
+
+Don Norman's concept of *affordances*, the perceived and actual properties of an object that suggest how it can be used \[25\], provides the foundational vocabulary. A door handle affords pulling; a flat plate affords pushing. When the affordance contradicts the required action, users fail, not because the mechanism is broken but because the design is uninhabitable. Software interfaces exhibit the same pathology: a button that looks disabled but is clickable, a workflow that requires six steps where the user's mental model expects two, an error message that names an internal exception rather than a recovery path.
+
+The Experience Model specifies:
+
+- **Interaction flows and affordances**: how users perceive available actions and system state; the mapping between user intent and system response
+- **Accessibility requirements**: WCAG conformance levels, assistive technology support, inclusive design constraints
+- **Information architecture**: cognitive load budgets, navigability, learnability expectations
+- **Feedback and error recovery**: system status visibility, error messaging, recovery paths
+
+**Verification method:** Heuristic evaluation and cognitive walkthrough at design time; automated accessibility testing and interaction pattern conformance at implementation time; user behavior analytics at runtime (see Section 6.1, Loop 3).
+
+**Civil engineering analog:** Architectural design and habitability standards, the specifications that ensure a structure is not merely safe but livable.
+
 ## 6. The Eval System: Software's Simulation Engine
 
 ### 6.1 Three verification loops
@@ -298,13 +319,13 @@ This layer captures constraints that must hold everywhere, always, regardless of
 The simulation capability for software is not a single tool but a system of three eval loops that operate at different phases, each leveraging the Decider pattern's property of pure, side-effect-free execution:
 
 **Loop 1 — Design-time simulation.**
-Before any code is written (by human or agent), the Deciders derived from the Event Model are executed against scenarios. "What happens if a publisher submits 10,000 articles simultaneously? What happens if a funder changes its open-access mandate mid-publication?" Because the Functional Core / Imperative Shell architecture confines all decision logic to pure functions, these simulations run at near-zero cost: no databases, no infrastructure, no deployment. The flow is simulated through the event timeline to find logical errors, missing events, and inconsistent states. This is the structural analysis step: proving the design before realization.
+Before any code is written (by human or agent), the Deciders derived from the Event Model are executed against scenarios. "What happens if a publisher submits 10,000 articles simultaneously? What happens if a funder changes its open-access mandate mid-publication?" Because the Functional Core / Imperative Shell architecture confines all decision logic to pure functions, these simulations run at near-zero cost: no databases, no infrastructure, no deployment. The flow is simulated through the event timeline to find logical errors, missing events, and inconsistent states. This is the structural analysis step: proving the design before realization. In parallel, the Experience Model is verified through heuristic evaluation and cognitive walkthrough: do the specified interaction flows match user mental models? Are affordances consistent? Are accessibility requirements met by the proposed design?
 
 **Loop 2 — Implementation-time evals.**
-When an AI agent implements a slice, the generated code is executed against an eval set *derived automatically from the Event Model.* Each Given-When-Then scenario (each Decider contract) becomes an automated acceptance test. The agent "passes" only if the code satisfies the specification, not vaguely but deterministically. Operational Model constraints add quantitative verification: the implementation must also meet latency budgets, resource limits, and resilience requirements. Policy Model constraints add invariant checks: security scanning, compliance verification, architectural conformance.
+When an AI agent implements a slice, the generated code is executed against an eval set *derived automatically from the Event Model.* Each Given-When-Then scenario (each Decider contract) becomes an automated acceptance test. The agent "passes" only if the code satisfies the specification, not vaguely but deterministically. Operational Model constraints add quantitative verification: the implementation must also meet latency budgets, resource limits, and resilience requirements. Policy Model constraints add invariant checks: security scanning, compliance verification, architectural conformance. Experience Model constraints add habitability checks: automated accessibility testing (WCAG conformance), interaction pattern conformance against the specified flows, and cognitive load verification against information architecture budgets.
 
 **Loop 3 — Runtime verification.**
-In production, actual events are validated against the expected model. Anomaly detection identifies patterns that should never occur according to the specification. Event sourcing provides a significant advantage here: the complete, immutable event log is a natural audit trail and verification corpus. Drift detection (the `terraform plan` equivalent) continuously compares production behavior against the specification and flags divergence.
+In production, actual events are validated against the expected model. Anomaly detection identifies patterns that should never occur according to the specification. Event sourcing provides a significant advantage here: the complete, immutable event log is a natural audit trail and verification corpus. Drift detection (the `terraform plan` equivalent) continuously compares production behavior against the specification and flags divergence. The Experience Model adds a distinct runtime signal: *desire path detection.* In landscape architecture, desire paths are the trails worn into grass by pedestrians who bypass the designed walkways; some universities now wait to see where students actually walk before paving paths. The software equivalent is user behavior analytics that reveal where users deviate from designed interaction flows, retry unexpectedly, abandon tasks, or improvise workarounds. These are not specification violations in the behavioral sense (the system did what the Event Model said); they are habitability failures (the system did what was specified, but what was specified does not match how humans actually work). Desire path data feeds back into the Experience Model, closing the loop between specified habitability and observed habitability.
 
 > [!info] A pioneer in practice.
 > Datadog's engineering organization has demonstrated that layered verification from formal specification to production telemetry is practically achievable \[18\]. Their approach layers formal specifications (TLA+) → deterministic simulation testing → model checking → formal verification → production telemetry, creating a closed loop where production observations refine the verification harness. While applied to infrastructure-level systems rather than product-level specification, their work shows that the verification pyramid this article proposes is not theoretical. It is an emerging engineering practice whose principles are ready to be lifted to the product level.
@@ -319,6 +340,7 @@ A critical extension of the eval system: rather than a single agent that builds 
 - A **security agent** that probes for vulnerabilities against the Policy Model
 - A **load agent** that stress-tests against the Operational Model
 - A **consistency agent** that verifies behavioral correctness against the Event Model
+- A **habitability agent** that evaluates accessibility conformance, interaction consistency, and cognitive load against the Experience Model
 
 This mirrors civil engineering practice where the structural engineer who verifies a design is independent of the architect who created it. Trust is placed in the verification system, not in the implementer's self-assessment.
 
@@ -326,7 +348,7 @@ This mirrors civil engineering practice where the structural engineer who verifi
 
 ### 7.1 Specification as strategy
 
-If the specification encompasses behavior, operational characteristics, and policy constraints, then **the specification is the product strategy**, and the historical separation between "the business side" and "the tech side" narrows sharply. A product leader who defines "publishers need real-time compliance checking with sub-second response times" is simultaneously writing behavioral specification (Event Model), performance requirements (Operational Model), and compliance constraints (Policy Model). No translation step. No alignment ceremony. One model.
+If the specification encompasses behavior, experience, operational characteristics, and policy constraints, then **the specification is the product strategy**, and the historical separation between "the business side" and "the tech side" narrows sharply. A product leader who defines "publishers need real-time compliance checking with sub-second response times, accessible to screen readers, with clear status feedback at each step" is simultaneously writing behavioral specification (Event Model), experience requirements (Experience Model), performance requirements (Operational Model), and compliance constraints (Policy Model). No translation step. No alignment ceremony. One model.
 
 ### 7.2 Specification ownership as leadership function
 
@@ -356,6 +378,7 @@ In a Software Civil Engineering organization, the most valuable human capabiliti
 - **Specification skills**: the ability to extract, formalize, and verify behavioral requirements through Event Modeling (or other context-aware specification-driven development technique) becomes the core professional competency
 - **Harness engineering**: defining non-functional requirements, provider profiles, and eval criteria with sufficient formality for machine verification becomes a specialized discipline
 - **Provider knowledge**: understanding the properties and limitations of technical substrates (databases, frameworks, infrastructure) becomes a form of materials science
+- **Experience specification**: defining interaction flows, accessibility requirements, and cognitive load budgets with sufficient formality to be testable; the ability to distinguish habitable from merely functional
 - **Verification design**: constructing eval systems that reliably catch specification violations becomes the quality function
 
 ### 8.2 What becomes less valuable
@@ -372,8 +395,9 @@ The traditional developer/architect/tech lead taxonomy gives way to roles organi
 
 - **Domain Engineers**: facilitate Event Modeling, extract behavioral specifications from stakeholders, maintain the Event Model. Evolution of business analyst + domain architect.
 - **Harness Engineers**: define operational and policy constraints, maintain provider profiles, design eval criteria — the integrated harness that makes agent autonomy safe. Evolution of performance engineer + security engineer + platform architect.
+- **Experience Engineers**: specify interaction flows, accessibility requirements, and cognitive load budgets; design heuristic evaluation criteria; monitor user behavior analytics for habitability drift. Evolution of UX designer + accessibility specialist + interaction designer.
 - **Quality Engineers**: build and maintain the eval system, design adversarial testing strategies, monitor production drift. Evolution of QA + SRE + compliance.
-- **Specification Leads**: own the unified specification for a product area, govern changes, ensure coherence across behavioral, operational, and policy layers. A leadership function, not an architecture role.
+- **Specification Leads**: own the unified specification for a product area, govern changes, ensure coherence across behavioral, experience, operational, and policy layers. A leadership function, not an architecture role.
 
 ![Role Evolution Map](role-evolution-map.svg)
 
@@ -439,7 +463,7 @@ Building codes are maintained by institutions (ISO, national standards bodies, p
 
 ### 10.4 The emergent complexity boundary
 
-There exists a class of technical decisions that are genuinely emergent. They arise from the interaction between domain behavior, technical substrate, and specific operational context in ways that resist formalization. "This event stream structure will create a hot partition given *our specific* usage pattern" requires understanding of all three layers simultaneously in a context-dependent way. Whether this can be fully formalized or whether it represents a permanent boundary for the model remains an open question.
+There exists a class of technical decisions that are genuinely emergent. They arise from the interaction between domain behavior, user context, technical substrate, and specific operational conditions in ways that resist formalization. "This event stream structure will create a hot partition given *our specific* usage pattern" or "this interaction flow will overwhelm users in *our specific* domain context" requires understanding of all four layers simultaneously in a context-dependent way. Whether this can be fully formalized or whether it represents a permanent boundary for the model remains an open question.
 
 **Consequence if unresolved:** Some engineering decisions may permanently require human judgment, limiting the degree of agent autonomy achievable. This is not necessarily a failure (civil engineering also requires experienced engineers for novel structures), but it bounds the model's applicability.
 
@@ -447,7 +471,7 @@ There exists a class of technical decisions that are genuinely emergent. They ar
 
 The infrastructure precedent proved that craft-to-engineering transformation is achievable within the software domain. The task now is to lift it from the infrastructure level to the product level.
 
-Event Modeling, made executable through the Decider pattern and extended with Operational and Policy constraint layers, provides the specification language for this lift. Each Given-When-Then slice is simultaneously a specification, a test, and a simulation scenario, executable as a pure function without infrastructure. Operationalized through the Specify → Plan → Verify → Apply → Observe lifecycle, the result is a viable foundation for Software Civil Engineering.
+Event Modeling, made executable through the Decider pattern and extended with Experience, Operational, and Policy layers, provides the specification language for this lift. Each Given-When-Then slice is simultaneously a specification, a test, and a simulation scenario, executable as a pure function without infrastructure. The Experience Model adds what structural calculations alone cannot: the assurance that what is built is not merely correct but habitable. Operationalized through the Specify → Plan → Verify → Apply → Observe lifecycle, the result is a viable foundation for Software Civil Engineering.
 
 What follows from this is a paradigm where specification precision replaces implementation skill as the primary value driver, where technical leadership becomes specification governance, and where AI agents serve as the execution engine of a properly specified engineering process. The specification does not describe the product; it *is* the product, and the organizations that grasp this will not merely be more productive. They will be operating in a fundamentally different mode: quality determined upstream, at the specification level, not downstream at the implementation level.
 
@@ -504,3 +528,5 @@ The bridges will not fall because they were designed not to.
 \[23\] B. Flyvbjerg and D. Gardner, *How Big Things Get Done: The Surprising Factors That Determine the Fate of Every Project, from Home Renovations to Space Exploration*, Currency, 2023. Empirical study of 16,000+ projects showing that IT projects carry the worst cost-overrun fat tails and that modularity and rigorous upfront planning ("think slow, act fast") are the strongest predictors of success.
 
 \[24\] K. Morris, "Humans and Agents in Software Engineering Loops," martinfowler.com, 2026. Introduces the distinction between human-in-the-loop and human-on-the-loop for agentic software engineering, and defines harness engineering as the discipline of building specifications, quality checks, and workflow guidance that enable autonomous agent operation.
+
+\[25\] D. Norman, *The Design of Everyday Things*, revised edition, Basic Books, 2013. Introduces affordance theory and human-centered design principles, establishing the foundational vocabulary for specifying how users perceive and interact with designed systems.

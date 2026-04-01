@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 505" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- OUTER RING: Policy Model (red)                           -->
+  <!-- Center: 360, 250. Radius: 225                            -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <circle cx="360" cy="250" r="225" fill="#c0392b" fill-opacity="0.08" stroke="#c0392b" stroke-width="2"/>
+
+  <!-- Outer ring labels (positioned in the ring area, top) -->
+  <text x="360" y="48" text-anchor="middle" font-size="14" font-weight="700" fill="#c0392b">Policy Model</text>
+  <text x="360" y="65" text-anchor="middle" font-size="10" fill="#922b21">What rules it must obey</text>
+
+  <!-- Civil engineering analog (bottom of outer ring) -->
+  <text x="360" y="452" text-anchor="middle" font-size="9" fill="#c0392b" font-style="italic">≈ Building codes + regulations</text>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- SECOND RING: Operational Model (orange)                  -->
+  <!-- Radius: 170                                              -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <circle cx="360" cy="250" r="170" fill="#e67e22" fill-opacity="0.08" stroke="#e67e22" stroke-width="2"/>
+
+  <!-- Second ring labels (positioned in the ring area, top) -->
+  <text x="360" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#e67e22">Operational Model</text>
+  <text x="360" y="124" text-anchor="middle" font-size="10" fill="#d35400">How it must perform</text>
+
+  <!-- Civil engineering analog (bottom of second ring) -->
+  <text x="360" y="398" text-anchor="middle" font-size="9" fill="#e67e22" font-style="italic">≈ Structural calculations + material datasheets</text>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- THIRD RING: Experience Model (green)                     -->
+  <!-- Radius: 115                                              -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <circle cx="360" cy="250" r="115" fill="#27ae60" fill-opacity="0.08" stroke="#27ae60" stroke-width="2"/>
+
+  <!-- Third ring labels (positioned in the ring area, top) -->
+  <text x="360" y="162" text-anchor="middle" font-size="13" font-weight="700" fill="#27ae60">Experience Model</text>
+  <text x="360" y="178" text-anchor="middle" font-size="10" fill="#1e8449">How humans inhabit it</text>
+
+  <!-- Civil engineering analog (bottom of third ring) -->
+  <text x="360" y="344" text-anchor="middle" font-size="9" fill="#27ae60" font-style="italic">≈ Architectural design + habitability standards</text>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- INNER CIRCLE: Event Model (blue)                         -->
+  <!-- Radius: 65                                               -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <circle cx="360" cy="250" r="65" fill="#3498db" fill-opacity="0.12" stroke="#3498db" stroke-width="2"/>
+
+  <!-- Inner circle labels -->
+  <text x="360" y="234" text-anchor="middle" font-size="13" font-weight="700" fill="#3498db">Event Model</text>
+  <text x="360" y="252" text-anchor="middle" font-size="10" fill="#2471a3">What the system does</text>
+
+  <!-- Civil engineering analog -->
+  <text x="360" y="272" text-anchor="middle" font-size="9" fill="#3498db" font-style="italic">≈ Functional blueprints</text>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- CENTER LABEL                                             -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <text x="360" y="296" text-anchor="middle" font-size="9" font-weight="600" fill="#2c3e50">Unified Specification</text>
+
+  <!-- Annotation -->
+  <text x="360" y="492" text-anchor="middle" font-size="9" fill="#95a5a6" font-style="italic">complementary and interlocking, not hierarchical</text>
+
+</svg>
