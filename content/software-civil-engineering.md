@@ -209,10 +209,17 @@ The mapping to Event Modeling is direct. Each Given-When-Then verification in an
 - **When** a command is issued → the Decider's input
 - **Then** specific events are produced → the Decider's output
 
-Paired with Deciders, an Event Model becomes more than a specification document; it becomes a *simulation suite.* Each slice defines scenarios that can be executed as pure functions, verified deterministically, and repeated indefinitely at near-zero cost. The blueprint is also the structural analysis. (Event Modeling does not prescribe the Decider pattern; many practitioners use DDD aggregates or other approaches to implement slices. But the Decider's purity makes it a natural fit, just as Event Sourcing is a natural fit for the persistence model: separate patterns that complement each other precisely.)
+Paired with Deciders, an Event Model becomes more than a specification document; it becomes a *simulation suite.* Each slice defines scenarios that can be executed as pure functions, verified deterministically, and repeated indefinitely at near-zero cost. The blueprint is also the structural analysis. (Event Modeling does not prescribe the Decider pattern; many practitioners use DDD aggregates or other approaches to implement slices. But the Decider's purity makes it a natural fit, just as Event Sourcing is a natural fit for the persistence model: separate patterns that complement each other precisely; the note below on Dynamic Consistency Boundaries shows how the Decider's type structure generalizes this further.)
 
 ![The Decider Pattern](decider-pattern.svg)
 *The Decider cycle: decide(state, command) → events; evolve(state, event) → state.*
+
+> [!info] Beyond the aggregate: Dynamic Consistency Boundaries.
+> The Decider as presented above uses symmetric types: the events it consumes are the same events it produces, and its state type is the same going in as coming out. In type terms this is `AggregateDecider<C, S, E>`, which maps one-to-one with the traditional DDD aggregate and its single event stream. But the Decider's algebraic structure is more general. The fully parameterized form is `Decider<C, Si, So, Ei, Eo>`, with five independent type parameters; the intermediate form `DcbDecider<C, S, Ei, Eo>` constrains state to be symmetric (Si = So) while keeping input and output event types distinct (Ei ≠ Eo). Set-theoretically: AggregateDecider ⊂ DcbDecider ⊂ Decider \[27\].
+>
+> The practical consequence is significant. When a decider can consume events it did not produce, consistency boundaries become dynamic: they are defined by *which events you query*, not by which aggregate you belong to. New invariants that span what were previously separate aggregates require no structural migration; you simply widen the query. Sara Pellegrini and Milan Savic's Dynamic Consistency Boundary (DCB) pattern \[28\] operationalizes this by replacing per-aggregate event streams with a single stream per bounded context and enforcing consistency through query-based optimistic locking (an append condition on event tags) rather than stream-revision locking. Some practitioners argue this is how event sourcing should be defined by default, with the aggregate as an intentional narrowing rather than the starting point.
+>
+> The tradeoff: a single stream per bounded context requires global ordering within that context, which is harder to partition horizontally than per-aggregate streams. For the thesis of this article, the key point is that the Decider pattern is not a single fixed shape; it is a family of progressively constrained types whose most general form enables slicing flexibility that traditional aggregates cannot match.
 
 ### 4.4 The six elements: a structural isomorphism
 
@@ -548,3 +555,7 @@ The bridges will not fall because they were designed not to.
 \[25\] D. Norman, *The Design of Everyday Things*, revised edition, Basic Books, 2013. Introduces affordance theory and human-centered design principles, establishing the foundational vocabulary for specifying how users perceive and interact with designed systems.
 
 \[26\] Foundation Capital, "The Great Reorg: A Human's Guide," foundationcapital.com, 2026. https://foundationcapital.com/ideas/the-great-reorg. Observes the organizational convergence of product, design, and engineering functions as AI agents assume implementation work, with independent market evidence that specification-driven reorganization is already underway.
+
+\[27\] I. Dugalic, "fmodel-decider," GitHub, 2024. https://github.com/fraktalio/fmodel-decider. Defines the five-parameter Decider and the progressive type refinement from `Decider<C, Si, So, Ei, Eo>` to `DcbDecider<C, S, Ei, Eo>` to `AggregateDecider<C, S, E>`, demonstrating that aggregates are a specialization of a more general algebraic structure.
+
+\[28\] S. Pellegrini and M. Savic, "Dynamic Consistency Boundaries," dcb.events, 2024. https://dcb.events. Introduces the DCB pattern: consistency boundaries defined by event queries rather than aggregate identity, enabling cross-aggregate invariants without structural migration. Implemented in Axon Framework 5.
