@@ -27,7 +27,7 @@ description: "From Craft to Discipline: Why Agentic AI Demands the Professionali
 - **Event Modeling** provides a specification language for product-level behavior that is both human-readable and machine-verifiable.
 - The **Decider pattern** makes Event Modeling specifications executable as pure functions, enabling simulation before implementation, just as structural analysis proves a design before construction.
 - A unified specification model (behavioral + experience + operational + policy layers), operationalized through a **Specify → Plan → Verify → Apply → Observe** lifecycle, extends the infrastructure paradigm to products.
-- This narrows the business-technical divide: the specification *becomes* the product strategy.
+- This narrows the business-technical divide: the specification *becomes* the product.
 - Open gaps remain in professional licensure, formal education, and industry standards: institutional debt the profession has yet to repay.
 
 ---
@@ -348,7 +348,7 @@ This mirrors civil engineering practice where the structural engineer who verifi
 
 ### 7.1 Specification as strategy
 
-If the specification encompasses behavior, experience, operational characteristics, and policy constraints, then **the specification is the product strategy**, and the historical separation between "the business side" and "the tech side" narrows sharply. A product leader who defines "publishers need real-time compliance checking with sub-second response times, accessible to screen readers, with clear status feedback at each step" is simultaneously writing behavioral specification (Event Model), experience requirements (Experience Model), performance requirements (Operational Model), and compliance constraints (Policy Model). No translation step. No alignment ceremony. One model.
+If the specification encompasses behavior, experience, operational characteristics, and policy constraints, then **the specification is the product**, and the historical separation between "the business side" and "the tech side" narrows sharply. A product leader who defines "publishers need real-time compliance checking with sub-second response times, accessible to screen readers, with clear status feedback at each step" is simultaneously writing behavioral specification (Event Model), experience requirements (Experience Model), performance requirements (Operational Model), and compliance constraints (Policy Model). No translation step. No alignment ceremony. One model.
 
 ### 7.2 Specification ownership as leadership function
 
