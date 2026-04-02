@@ -399,6 +399,22 @@ The traditional developer/architect/tech lead taxonomy gives way to roles organi
 - **Quality Engineers**: build and maintain the eval system, design adversarial testing strategies, monitor production drift. Evolution of QA + SRE + compliance.
 - **Specification Leads**: own the unified specification for a product area, govern changes, ensure coherence across behavioral, experience, operational, and policy layers. A leadership function, not an architecture role.
 
+### 8.4 Functional convergence
+
+The role archetypes above describe convergence at the individual level. The same specification-driven logic operates one level up: at the organizational function level.
+
+Traditionally, product management owns "what to build," design owns "how it feels," and engineering owns "how it works." These are separate functions with separate reporting lines, separate tooling, and alignment ceremonies (roadmap reviews, design handoffs, sprint planning) to keep them synchronized. The ceremonies exist because each function maintains its own representation of the product, and the representations drift.
+
+When the unified specification encompasses behavior (Event Model), experience (Experience Model), operational characteristics, and policy constraints, the boundaries between these functions dissolve. A specification that defines both what the system does and how users experience it is simultaneously a product artifact, a design artifact, and an engineering artifact. The alignment ceremony becomes redundant because there is one model, not three translations of it.
+
+The three functions converge into a single R&D function organized around the specification lifecycle: Specify → Plan → Verify → Apply → Observe. This is not a merger of convenience; it is a structural consequence of specification unification. Product concerns map to the Behavioral and Policy layers, design concerns map to the Experience layer, and engineering concerns map to the Operational layer and provider knowledge. The specification is the shared language that makes functional boundaries unnecessary.
+
+Foundation Capital's analysis of organizational restructuring in the age of AI agents observes this convergence independently: organizations are already collapsing "three traditional roles (product, engineering, design)" into unified structures \[26\]. What the market is discovering empirically, the specification model explains disciplinarily: when one artifact captures what to build, how it should feel, and how it must perform, maintaining three separate functions to govern those concerns is organizational overhead without engineering justification.
+
+![Functional Convergence](functional-convergence.svg)
+
+*Product, Design, and Engineering converge into specification-driven R&D.*
+
 ![Role Evolution Map](role-evolution-map.svg)
 
 *Roles reorganize around the specification lifecycle, not the implementation lifecycle.*
@@ -530,3 +546,5 @@ The bridges will not fall because they were designed not to.
 \[24\] K. Morris, "Humans and Agents in Software Engineering Loops," martinfowler.com, 2026. Introduces the distinction between human-in-the-loop and human-on-the-loop for agentic software engineering, and defines harness engineering as the discipline of building specifications, quality checks, and workflow guidance that enable autonomous agent operation.
 
 \[25\] D. Norman, *The Design of Everyday Things*, revised edition, Basic Books, 2013. Introduces affordance theory and human-centered design principles, establishing the foundational vocabulary for specifying how users perceive and interact with designed systems.
+
+\[26\] Foundation Capital, "The Great Reorg: A Human's Guide," foundationcapital.com, 2026. https://foundationcapital.com/ideas/the-great-reorg. Observes the organizational convergence of product, design, and engineering functions as AI agents assume implementation work, with independent market evidence that specification-driven reorganization is already underway.
