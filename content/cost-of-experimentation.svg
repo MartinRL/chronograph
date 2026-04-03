@@ -2,16 +2,16 @@
   <defs>
     <style>
       text { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
-      .axis-label { font-size: 13px; fill: #555; }
-      .phase-label { font-size: 12px; fill: #333; font-weight: 500; }
+      .axis-label { font-size: 13px; fill: #2c3e50; }
+      .phase-label { font-size: 12px; fill: #2c3e50; font-weight: 500; }
       .curve-label { font-size: 13px; font-weight: 600; }
-      .title { font-size: 16px; fill: #222; font-weight: 600; }
-      .annotation { font-size: 11px; fill: #777; font-style: italic; }
+      .title { font-size: 16px; fill: #2c3e50; font-weight: 600; }
+      .annotation { font-size: 11px; fill: #95a5a6; font-style: italic; }
     </style>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1565c0"/>
+    </marker>
   </defs>
-
-  <!-- Background -->
-  <rect width="720" height="400" fill="#fafafa" rx="4"/>
 
   <!-- Title -->
   <text x="360" y="32" text-anchor="middle" class="title">The Cost of Experimentation by Phase</text>
@@ -19,18 +19,18 @@
   <!-- Chart area -->
   <g transform="translate(80, 55)">
     <!-- Axes -->
-    <line x1="0" y1="280" x2="560" y2="280" stroke="#999" stroke-width="1.5"/>
-    <line x1="0" y1="0" x2="0" y2="280" stroke="#999" stroke-width="1.5"/>
+    <line x1="0" y1="280" x2="560" y2="280" stroke="#2c3e50" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="0" y2="280" stroke="#2c3e50" stroke-width="1.5"/>
 
     <!-- Y-axis labels -->
     <text x="-12" y="20" text-anchor="end" class="axis-label">High</text>
     <text x="-12" y="270" text-anchor="end" class="axis-label">Low</text>
 
-    <!-- Phase columns (light alternating bands) -->
-    <rect x="0" y="0" width="140" height="280" fill="#e8f5e9" opacity="0.5"/>
-    <rect x="140" y="0" width="140" height="280" fill="#e3f2fd" opacity="0.4"/>
-    <rect x="280" y="0" width="140" height="280" fill="#fff3e0" opacity="0.5"/>
-    <rect x="420" y="0" width="140" height="280" fill="#fce4ec" opacity="0.4"/>
+    <!-- Phase columns (subtle alternating bands) -->
+    <rect x="0" y="0" width="140" height="280" fill="#27ae60" opacity="0.12"/>
+    <rect x="140" y="0" width="140" height="280" fill="#3498db" opacity="0.12"/>
+    <rect x="280" y="0" width="140" height="280" fill="#e67e22" opacity="0.12"/>
+    <rect x="420" y="0" width="140" height="280" fill="#e74c3c" opacity="0.12"/>
 
     <!-- Phase labels -->
     <text x="70" y="300" text-anchor="middle" class="phase-label">Specification</text>
@@ -42,11 +42,11 @@
     <text x="490" y="300" text-anchor="middle" class="phase-label">Production</text>
 
     <!-- Grid lines (subtle) -->
-    <line x1="0" y1="70" x2="560" y2="70" stroke="#ddd" stroke-width="0.5" stroke-dasharray="4,4"/>
-    <line x1="0" y1="140" x2="560" y2="140" stroke="#ddd" stroke-width="0.5" stroke-dasharray="4,4"/>
-    <line x1="0" y1="210" x2="560" y2="210" stroke="#ddd" stroke-width="0.5" stroke-dasharray="4,4"/>
+    <line x1="0" y1="70" x2="560" y2="70" stroke="#7f8c8d" stroke-width="0.5" stroke-dasharray="4,4" opacity="0.4"/>
+    <line x1="0" y1="140" x2="560" y2="140" stroke="#7f8c8d" stroke-width="0.5" stroke-dasharray="4,4" opacity="0.4"/>
+    <line x1="0" y1="210" x2="560" y2="210" stroke="#7f8c8d" stroke-width="0.5" stroke-dasharray="4,4" opacity="0.4"/>
 
-    <!-- Cost per experiment curve (rises right) — red/warm -->
+    <!-- Cost per experiment curve (rises right) -->
     <path d="M 70,260 C 150,255 250,240 280,200 C 310,160 370,100 420,50 C 450,25 470,18 490,15"
           fill="none" stroke="#d32f2f" stroke-width="2.5" stroke-linecap="round"/>
     <!-- Cost curve dots -->
@@ -55,7 +55,7 @@
     <circle cx="350" cy="130" r="5" fill="#d32f2f"/>
     <circle cx="490" cy="15" r="5" fill="#d32f2f"/>
 
-    <!-- Experiments affordable curve (drops right) — green/cool -->
+    <!-- Experiments affordable curve (drops right) -->
     <path d="M 70,15 C 100,18 150,25 210,30 C 280,50 320,120 350,180 C 380,220 440,255 490,260"
           fill="none" stroke="#2e7d32" stroke-width="2.5" stroke-linecap="round"/>
     <!-- Experiments curve dots -->
@@ -74,11 +74,4 @@
     <line x1="420" y1="340" x2="120" y2="340" stroke="#1565c0" stroke-width="2" marker-end="url(#arrowBlue)"/>
     <text x="270" y="358" text-anchor="middle" class="annotation" fill="#1565c0" style="font-style: normal; font-weight: 600; font-size: 12px;">← shift left: experiment here</text>
   </g>
-
-  <!-- Arrow marker -->
-  <defs>
-    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1565c0"/>
-    </marker>
-  </defs>
 </svg>
