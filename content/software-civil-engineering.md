@@ -213,6 +213,24 @@ The mapping to Event Modeling is direct. Each Given-When-Then verification in an
 - **When** a command is issued → the Decider's input
 - **Then** specific events are produced → the Decider's output
 
+But what happens when the command is invalid? A structural analysis that concludes "this beam cannot bear the load" is not a failure of the analysis; it is the analysis doing its job. The same holds for the Decider. A `decide` invocation that rejects a command is not an error; it is a verified prediction that the operation would violate an invariant. The type signature makes this explicit through a discriminated union:
+
+```
+type DecideResult =
+    | Accepted of Event list
+    | Rejected of Reason
+
+decide : State → Command → DecideResult
+
+decide state (SubmitArticle { articleId; funderId }) =
+    if not (state.funderMandates |> satisfiedBy articleId) then
+        Rejected (ComplianceViolation { articleId; funderId; mandate = state.funderMandates })
+    else
+        Accepted \[ ArticleSubmitted { articleId; funderId } \]
+```
+
+The happy path produces events; the rejection path produces a reason. Both are values; neither is an exception. When simulating a thousand scenarios, rejected commands are data points, not crashes: each one a structural calculation that proved a design constraint holds.
+
 Paired with Deciders, an Event Model becomes more than a specification document; it becomes a *simulation suite.* Each slice defines scenarios that can be executed as pure functions, verified deterministically, and repeated indefinitely at near-zero cost. The blueprint is also the structural analysis. (Event Modeling does not prescribe the Decider pattern; many practitioners use DDD aggregates or other approaches to implement slices. But the Decider's purity makes it a natural fit, just as Event Sourcing is a natural fit for the persistence model: separate patterns that complement each other precisely; the note below on Dynamic Consistency Boundaries shows how the Decider's type structure generalizes this further.)
 
 But verification is only half the value of near-zero-cost simulation. The other half is *experimentation*. When each scenario executes as a pure function call, the cost per experiment drops so dramatically that the question shifts from "can we afford to test this alternative?" to "can we afford *not* to?" Instead of verifying one design, teams can explore dozens: alternative command flows, different event granularities, competing business rules, all executed against the same Given-When-Then contracts without deploying a single service.

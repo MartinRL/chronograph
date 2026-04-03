@@ -3,6 +3,9 @@
     <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto-start-reverse">
       <path d="M0,0 L8,3 L0,6" fill="#2c3e50"/>
     </marker>
+    <marker id="arr-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto-start-reverse">
+      <path d="M0,0 L8,3 L0,6" fill="#c0392b"/>
+    </marker>
   </defs>
 
   <!-- ════════════════════════════════════════════════════════ -->
@@ -23,8 +26,24 @@
   <!-- Purity annotation -->
   <text x="278" y="78" text-anchor="middle" font-size="9" fill="#95a5a6" font-style="italic">pure function: no side effects</text>
 
+  <!-- Label: Accepted (on right arrow) -->
+  <text x="358" y="105" text-anchor="middle" font-size="9" fill="#27ae60" font-weight="600">Accepted</text>
+
   <!-- Arrow: decide → events -->
   <line x1="328" y1="115" x2="390" y2="115" stroke="#2c3e50" stroke-width="2.2" marker-end="url(#arr)"/>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- REJECTED PATH (red, downward from decide)               -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- Label: Rejected -->
+  <text x="296" y="168" font-size="9" fill="#c0392b" font-weight="600">Rejected</text>
+
+  <!-- Arrow: decide → rejected box -->
+  <line x1="278" y1="140" x2="278" y2="188" stroke="#c0392b" stroke-width="2.2" marker-end="url(#arr-red)"/>
+
+  <!-- Rejected box -->
+  <rect x="213" y="190" width="130" height="42" rx="6" fill="#c0392b"/>
+  <text x="278" y="216" text-anchor="middle" font-size="13" font-weight="500" fill="#fff">rejection</text>
 
   <!-- ════════════════════════════════════════════════════════ -->
   <!-- EVENTS (orange, stacked, top-right, in dashed box)       -->
@@ -82,9 +101,9 @@
   <text x="330" y="410" text-anchor="middle" font-size="9" fill="#566573">command</text>
   <text x="330" y="424" text-anchor="middle" font-size="9" fill="#566573" font-style="italic">(input to decide)</text>
 
-  <!-- Then → events -->
+  <!-- Then → events or rejection -->
   <text x="530" y="395" text-anchor="middle" font-size="10" font-weight="700" fill="#e67e22">Then</text>
-  <text x="530" y="410" text-anchor="middle" font-size="9" fill="#566573">events</text>
-  <text x="530" y="424" text-anchor="middle" font-size="9" fill="#566573" font-style="italic">(output of decide)</text>
+  <text x="530" y="410" text-anchor="middle" font-size="9" fill="#566573">events produced</text>
+  <text x="530" y="424" text-anchor="middle" font-size="9" fill="#c0392b" font-style="italic">or command rejected</text>
 
 </svg>
