@@ -1,6 +1,7 @@
 ---
 title: "Software Civil Engineering"
 description: "From Craft to Discipline: Why Agentic AI Demands the Professionalization of Software Production"
+created: 2026-03-22
 ---
 
 # Software Civil Engineering
@@ -80,6 +81,9 @@ Civil engineering rests on six foundational pillars that collectively distinguis
 5. **Professional licensure and liability.** A licensed civil engineer places their personal signature on calculations. Legal accountability is assigned to named individuals. When a bridge collapses, responsibility is traceable.
 
 6. **Formal education and examination.** Engineering degrees are standardized, accredited, and require demonstrated competence in specific knowledge domains through rigorous examination.
+
+> [!info] Independent convergence.
+> Christopher Meiklejohn, in ["Software Engineering Is Becoming Civil Engineering"](https://christophermeiklejohn.com/ai/engineering/2026/04/01/software-engineering-is-becoming-civil-engineering.html) (April 2026), independently arrives at the same structural analogy, focusing on the role split between feature builders ("welders") and platform engineers ("structural engineers") and the apprenticeship pipeline needed to develop the latter \[30\]. The shared metaphor, arrived at independently, suggests an emerging industry consensus that software's craft-to-engineering transition is underway. This article focuses on the specification and verification infrastructure for the "structural engineering" side; Meiklejohn focuses on the workforce and education implications.
 
 ### 2.2 Software development's current position
 
@@ -571,3 +575,5 @@ The bridges will not fall because they were designed not to.
 \[28\] S. Pellegrini and M. Savic, "Dynamic Consistency Boundaries," dcb.events, 2024. https://dcb.events. Introduces the DCB pattern: consistency boundaries defined by event queries rather than aggregate identity, enabling cross-aggregate invariants without structural migration. Implemented in Axon Framework 5.
 
 \[29\] S. Thomke, *Experimentation Matters: Unlocking the Potential of New Technologies for Innovation*, Harvard Business School Press, 2003. Demonstrates empirically that reducing the cost of experimentation increases innovation rate, and that simulation technologies shift experimentation from physical to virtual domains, enabling earlier and more frequent iteration.
+
+\[30\] C. Meiklejohn, "Software Engineering Is Becoming Civil Engineering," christophermeiklejohn.com, April 2026. https://christophermeiklejohn.com/ai/engineering/2026/04/01/software-engineering-is-becoming-civil-engineering.html. Examines the AI-driven role split in software engineering through the civil engineering analogy, focusing on platform engineering as the structural discipline and the apprenticeship gap.
