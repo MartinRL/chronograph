@@ -201,6 +201,9 @@ The answer lies in a pattern that connects Event Modeling directly to verifiable
 
 A Decider is a pure, deterministic function: given the current state (derived from prior events) and a command, it produces the resulting events. No side effects, no infrastructure dependencies, no network calls. Just input, logic, output.
 
+![The Decider Pattern](decider-pattern.svg)
+*The Decider: decide(state, command) → events or rejection; evolve(state, event) → state.*
+
 This purity is not accidental; it is an architectural choice. The Functional Core / Imperative Shell pattern (Gary Bernhardt, 2012 \[19\]) structures software so that all decision logic lives in pure functions at the center — the functional core — while all side effects (database I/O, HTTP, messaging) are pushed to a thin outer layer — the imperative shell. The Decider's `decide` and `evolve` functions ARE the functional core: values in, values out, no I/O. Event store persistence, endpoint handling, and event publishing are the imperative shell: thin wiring that orchestrates the core but contains no business logic.
 
 This separation is what makes simulation possible. Just as structural engineers analyze forces using mathematical models — pure abstractions that operate on numbers, not on physical materials — the functional core allows a design to be proven before realization. Without this architectural discipline, business logic is entangled with I/O, and "structural analysis" requires standing up databases, configuring infrastructure, and deploying services. The near-zero-cost simulation that Deciders enable is a property of the architecture that makes the pattern's purity achievable, not of the pattern alone.
@@ -242,9 +245,6 @@ This counters a common misconception: that formal specification slows iteration,
 ![The Cost of Experimentation](cost-of-experimentation.svg)
 
 *Moving upstream reduces cost per experiment; the number of affordable experiments rises in inverse proportion.*
-
-![The Decider Pattern](decider-pattern.svg)
-*The Decider cycle: decide(state, command) → events; evolve(state, event) → state.*
 
 > [!info] Beyond the aggregate: Dynamic Consistency Boundaries.
 > The Decider as presented above uses symmetric types: the events it consumes are the same events it produces, and its state type is the same going in as coming out. In type terms this is `AggregateDecider<C, S, E>`, which maps one-to-one with the traditional DDD aggregate and its single event stream. But the Decider's algebraic structure is more general. The fully parameterized form is `Decider<C, Si, So, Ei, Eo>`, with five independent type parameters; the intermediate form `DcbDecider<C, S, Ei, Eo>` constrains state to be symmetric (Si = So) while keeping input and output event types distinct (Ei ≠ Eo). Set-theoretically: AggregateDecider ⊂ DcbDecider ⊂ Decider \[27\].
