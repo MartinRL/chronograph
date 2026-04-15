@@ -1,0 +1,45 @@
+name: Daily D4 Digest
+
+on:
+  schedule:
+    - cron: '0 5 * * *'  # 05:00 UTC = 07:00 CEST
+  workflow_dispatch:       # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Generate daily brief
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: dotnet run --project src/DailyD4Digest
+
+      - name: Pipeline summary
+        run: |
+          BRIEF="content/digest/briefs/$(date +%Y-%m-%d).md"
+          if [ -f "$BRIEF" ]; then
+            echo "### Daily D4 Digest — $(date +%Y-%m-%d)" >> $GITHUB_STEP_SUMMARY
+            head -10 "$BRIEF" | grep -E '^(sources_scanned|items_scored|items_selected):' | \
+              sed 's/^/- **/' | sed 's/:/**: /' >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "Brief generated at \`$BRIEF\`" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "### No brief generated today" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Commit brief
+        run: |
+          git config user.name "research-bot"
+          git config user.email "research-bot@users.noreply.github.com"
+          git add content/digest/briefs/
+          git diff --cached --quiet || git commit -m "docs: daily D4 digest $(date +%Y-%m-%d)"
+          git push
