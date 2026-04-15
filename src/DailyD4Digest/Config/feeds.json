@@ -1,0 +1,87 @@
+{
+  "rssFeeds": [
+    "https://simonwillison.net/atom/everything/",
+    "https://martinfowler.com/feed.atom",
+    "https://www.latent.space/feed",
+    "https://tidyfirst.substack.com/feed",
+    "https://newsletter.pragmaticengineer.com/feed",
+    "https://www.anthropic.com/blog/rss.xml",
+    "https://openai.com/blog/rss.xml",
+    "https://deepmind.google/blog/rss.xml",
+    "https://steve-yegge.medium.com/feed",
+    "https://ghuntley.com/rss/",
+    "https://medium.com/feed/@swardley",
+    "https://blog.gardeviance.org/feeds/posts/default?alt=rss",
+    "https://hnrss.org/newest?q=agentic+AI&points=50",
+    "https://hnrss.org/newest?q=MCP+protocol&points=20",
+    "https://hnrss.org/newest?q=event+modeling",
+    "https://hnrss.org/newest?q=AI+coding+agent&points=30",
+    "https://hnrss.org/newest?q=Claude+Code&points=30",
+    "https://hnrss.org/newest?q=cursor+AI&points=30",
+    "https://hnrss.org/newest?q=devin+AI&points=30",
+    "https://feed.infoq.com/ai-ml-data-eng",
+    "https://feed.infoq.com/architecture",
+    "https://rss.arxiv.org/rss/cs.AI",
+    "https://rss.arxiv.org/rss/cs.MA",
+    "https://rss.arxiv.org/rss/cs.SE",
+    "https://huggingface.co/blog/feed.xml",
+    "https://openrss.org/twitter.com/karpathy",
+    "https://openrss.org/twitter.com/simonw",
+    "https://openrss.org/twitter.com/swyx",
+    "https://openrss.org/twitter.com/AnthropicAI",
+    "https://openrss.org/twitter.com/OpenAI",
+    "https://openrss.org/twitter.com/steveyegge",
+    "https://openrss.org/twitter.com/KentBeck",
+    "https://openrss.org/twitter.com/martinfowler",
+    "https://openrss.org/twitter.com/swardley",
+    "https://openrss.org/twitter.com/geoffreyhuntley",
+    "https://openrss.org/twitter.com/harrison_chase",
+    "https://openrss.org/twitter.com/alexalbert__",
+    "https://openrss.org/twitter.com/GergelyOrosz",
+    "https://openrss.org/twitter.com/GoogleDeepMind",
+    "https://linkedinrss.cns.me/agentic-ai-7256506951948226561",
+    "https://linkedinrss.cns.me/the-rise-of-agentic-ai-7275925131267350528",
+    "https://linkedinrss.cns.me/artificial-intelligence-6598352935271358464",
+    "https://linkedinrss.cns.me/tldr-weekly-bytes-6902649352100179968"
+  ],
+  "redditSubreddits": [
+    "MachineLearning",
+    "LocalLLaMA",
+    "ClaudeAI",
+    "ExperiencedDevs",
+    "softwarearchitecture",
+    "CQRS",
+    "cursor",
+    "ChatGPTPro",
+    "AI_Agents",
+    "LLMDevs",
+    "ChatGPTCoding",
+    "aipromptprogramming",
+    "OpenAI",
+    "singularity"
+  ],
+  "blueskyQueries": [
+    "agentic AI",
+    "MCP protocol",
+    "event modeling",
+    "AI coding agent",
+    "spec driven development",
+    "claude code",
+    "cursor AI",
+    "software civil engineering"
+  ],
+  "arxivQueries": [
+    {
+      "category": "cs.SE",
+      "keywords": "agentic OR \"spec driven\" OR \"event modeling\" OR \"formal specification\""
+    },
+    {
+      "category": "cs.AI",
+      "keywords": "agent OR autonomous OR \"code generation\" OR \"multi-agent\""
+    },
+    {
+      "category": "cs.MA",
+      "keywords": "multi-agent OR orchestration OR cooperation OR protocol"
+    }
+  ]
+}

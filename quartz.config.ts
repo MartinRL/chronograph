@@ -15,7 +15,7 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "en-US",
     baseUrl: "martinrl.github.io/chronograph",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates", ".obsidian", "src", "*.csproj", "*.slnx", "*.cs", "*.json"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
