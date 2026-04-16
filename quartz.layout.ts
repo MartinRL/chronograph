@@ -42,7 +42,20 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      sortFn: (a, b) => {
+        // Pin "Software Civil Engineering" above "Daily D4 Digest"
+        if (a.slugSegment === "software-civil-engineering") return -1
+        if (b.slugSegment === "software-civil-engineering") return 1
+
+        // Default: folders before files, then alphabetical
+        if (a.isFolder !== b.isFolder) return a.isFolder ? -1 : 1
+        return a.displayName.localeCompare(b.displayName, undefined, {
+          numeric: true,
+          sensitivity: "base",
+        })
+      },
+    }),
     Component.DesktopOnly(Component.Graph()),
   ],
   right: [
@@ -65,7 +78,17 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      sortFn: (a, b) => {
+        if (a.slugSegment === "software-civil-engineering") return -1
+        if (b.slugSegment === "software-civil-engineering") return 1
+        if (a.isFolder !== b.isFolder) return a.isFolder ? -1 : 1
+        return a.displayName.localeCompare(b.displayName, undefined, {
+          numeric: true,
+          sensitivity: "base",
+        })
+      },
+    }),
   ],
   right: [],
 }
