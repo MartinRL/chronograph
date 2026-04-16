@@ -16,6 +16,7 @@ It hosts two things:
 npm run check          # Type-check (tsc --noEmit) + Prettier format check
 npm run format         # Auto-format with Prettier
 npm test               # Run tests (tsx --test, Node native test runner)
+npx tsx --test quartz/util/path.test.ts  # Run a single test file
 npx quartz build       # Build the site
 npx quartz build --serve  # Build and serve locally with hot reload
 npx quartz build --bundleInfo -d docs  # Build with bundle analysis (used in CI)
@@ -66,6 +67,7 @@ Markdown files live in `content/`. The build ignores patterns listed in `quartz.
 GitHub Actions (`.github/workflows/ci.yaml`) runs on push/PR to `v4`:
 - Matrix: Windows, macOS, Ubuntu
 - Steps: `npm ci` → `npm run check` → `npm test` → build
+- Note: The `build-and-test` job has an `if: github.repository == 'jackyzha0/quartz'` guard — it only runs on the upstream repo, not on this fork
 
 Deployment (`.github/workflows/deploy.yml`) pushes to GitHub Pages on `v4` branch pushes.
 
