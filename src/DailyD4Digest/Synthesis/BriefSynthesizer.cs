@@ -22,7 +22,8 @@ public sealed class BriefSynthesizer(ILogger<BriefSynthesizer> logger)
         var client = new AnthropicClient(new ClientOptions
         {
             HttpClient = httpClient,
-            Timeout = TimeSpan.FromMinutes(5)
+            Timeout = TimeSpan.FromMinutes(5),
+            MaxRetries = 4
         });
 
         var promptPath = Path.Combine(AppContext.BaseDirectory, "Config", "prompts", "synthesis.md");
@@ -58,31 +59,39 @@ public sealed class BriefSynthesizer(ILogger<BriefSynthesizer> logger)
 
         logger.LogInformation("Synthesizing brief with {Count} items via Opus", items.Count);
 
-        var response = await client.Messages.Create(new MessageCreateParams
+        try
         {
-            Model = "claude-opus-4-6",
-            MaxTokens = 8192,
-            System = systemPrompt,
-            Messages = [new()
+            var response = await client.Messages.Create(new MessageCreateParams
             {
-                Role = Role.User,
-                Content = userMessage,
-            }]
-        }, ct);
+                Model = "claude-opus-4-6",
+                MaxTokens = 8192,
+                System = systemPrompt,
+                Messages = [new()
+                {
+                    Role = Role.User,
+                    Content = userMessage,
+                }]
+            }, ct);
 
-        var markdown = string.Join("", response.Content
-            .Select(block => block.TryPickText(out var text) ? text.Text : ""));
+            var markdown = string.Join("", response.Content
+                .Select(block => block.TryPickText(out var text) ? text.Text : ""));
 
-        markdown = StripCodeFences(markdown);
+            markdown = StripCodeFences(markdown);
 
-        return new DailyBrief
+            return new DailyBrief
+            {
+                Date = today,
+                Markdown = markdown,
+                SourcesScanned = totalScanned,
+                ItemsScored = totalScored,
+                ItemsSelected = items.Count
+            };
+        }
+        catch (Exception ex)
         {
-            Date = today,
-            Markdown = markdown,
-            SourcesScanned = totalScanned,
-            ItemsScored = totalScored,
-            ItemsSelected = items.Count
-        };
+            logger.LogError(ex, "Synthesis failed after retries");
+            throw;
+        }
     }
 
     private static string StripCodeFences(string text)
