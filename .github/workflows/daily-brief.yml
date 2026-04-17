@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   generate:
@@ -42,4 +43,14 @@ jobs:
           git config user.email "research-bot@users.noreply.github.com"
           git add content/digest/briefs/
           git diff --cached --quiet || git commit -m "docs: daily D4 digest $(date +%Y-%m-%d)"
+          git pull --rebase origin v4
           git push
+
+      - name: Create issue on failure
+        if: failure()
+        run: |
+          gh issue create \
+            --title "Daily D4 Digest failed — $(date +%Y-%m-%d)" \
+            --body "The daily digest pipeline failed. [View run](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+        env:
+          GH_TOKEN: ${{ github.token }}
