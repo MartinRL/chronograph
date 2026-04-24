@@ -24,9 +24,9 @@ var host = builder.Build();
 var logger = host.Services.GetRequiredService<ILoggerFactory>().CreateLogger("DailyD4Digest");
 var ct = CancellationToken.None;
 
-// Determine output directory — default to content/digest/briefs/ relative to repo root
+// Determine output directory — default to content/digest/ relative to repo root
 var outputDir = Environment.GetEnvironmentVariable("OUTPUT_DIR")
-    ?? Path.Combine(FindRepoRoot(), "content", "digest", "briefs");
+    ?? Path.Combine(FindRepoRoot(), "content", "digest");
 
 logger.LogInformation("Starting Daily D4 Digest pipeline");
 logger.LogInformation("Output directory: {OutputDir}", outputDir);
@@ -132,7 +132,7 @@ logger.LogInformation("Step 5/6: SYNTHESIZE");
 var synthesizer = host.Services.GetRequiredService<BriefSynthesizer>();
 var brief = await synthesizer.SynthesizeAsync(enriched, totalScanned, totalScored, ct);
 
-// 6. WRITE — output to content/digest/briefs/
+// 6. WRITE — output to content/digest/
 logger.LogInformation("Step 6/6: WRITE");
 var writer = host.Services.GetRequiredService<MarkdownWriter>();
 await writer.WriteAsync(brief, outputDir, ct);

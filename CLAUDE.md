@@ -8,7 +8,7 @@ Chronograph is a deployment of **Quartz v4** — a TypeScript-based static site 
 
 It hosts two things:
 1. **Long-form essays** — the Software Civil Engineering thesis (`content/software-civil-engineering.md`)
-2. **Daily D4 Digest** — a .NET 10 pipeline that generates daily intelligence briefs on agentic engineering (`content/digest/briefs/`)
+2. **Daily D4 Digest** — a .NET 10 pipeline that generates daily intelligence briefs on agentic engineering (`content/digest/`)
 
 ## Common Commands
 
@@ -82,7 +82,7 @@ A C# .NET 10 console app that collects, scores, and synthesizes a daily intellig
 ```
 Sources (RSS, arXiv, Reddit, Bluesky)
   → Collect → Dedup → Score (Sonnet) → Enrich → Synthesize (Opus) → Write
-  → content/digest/briefs/YYYY-MM-DD.md
+  → content/digest/YYYY-MM-DD.md
   → Quartz → GitHub Pages
 ```
 
@@ -92,8 +92,7 @@ Sources (RSS, arXiv, Reddit, Bluesky)
 |------|---------|
 | `src/DailyD4Digest/` | .NET console app — the pipeline |
 | `src/DailyD4Digest/Config/` | feeds.json, dimensions.json, prompts/ |
-| `content/digest/briefs/` | Generated daily markdown briefs |
-| `content/digest/` | D4 Digest content root |
+| `content/digest/` | D4 Digest content root — generated daily markdown briefs live here |
 
 ### Data Sources
 
@@ -122,7 +121,7 @@ export ANTHROPIC_API_KEY=sk-ant-...
 dotnet run --project src/DailyD4Digest
 ```
 
-Output: `content/digest/briefs/YYYY-MM-DD.md`
+Output: `content/digest/YYYY-MM-DD.md`
 
 ### Pipeline Conventions
 

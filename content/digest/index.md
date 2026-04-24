@@ -38,6 +38,4 @@ The thesis that agentic AI is the forcing function for software's professionaliz
 
 ---
 
-## Recent Briefs
-
-Browse the [[digest/briefs/]] folder for daily digests.
+New briefs land here each morning at 07:00 CEST.

@@ -28,14 +28,14 @@ Browse briefs at [martinrl.github.io/chronograph/digest](https://martinrl.github
 ```
 Sources (RSS, arXiv, Reddit, Bluesky)
   -> Collect -> Dedup -> Score (Sonnet) -> Enrich -> Synthesize (Opus) -> Write
-  -> content/digest/briefs/YYYY-MM-DD.md
+  -> content/digest/YYYY-MM-DD.md
   -> Quartz -> GitHub Pages
 ```
 
 | Path | Purpose |
 |------|---------|
 | `content/` | Quartz content root (essays, infographics) |
-| `content/digest/briefs/` | Generated daily briefs |
+| `content/digest/` | Generated daily briefs |
 | `src/DailyD4Digest/` | .NET 10 console app — the pipeline |
 | `src/DailyD4Digest/Config/` | feeds.json, dimensions.json, prompts/ |
 | `quartz/` | Quartz v4 static site generator |
