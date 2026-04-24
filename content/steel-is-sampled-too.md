@@ -28,7 +28,7 @@ created: 2026-04-24
 
 ## 1. What the Rebuttal Claims
 
-Jørgensen responds to "Software Civil Engineering" \[5\] by arguing that four structural disanalogies break the comparison between civil engineering and agentic software development:
+Jørgensen responds to "[[software-civil-engineering|Software Civil Engineering]]" \[5\] by arguing that four structural disanalogies break the comparison between civil engineering and agentic software development:
 
 1. **Physics vs. human meaning.** Civil engineering operates within fixed physical laws with measurable properties; software models human intent and organizational process, which lack comparable stability.
 2. **Requirements volatility.** Bridge specifications remain stable after construction begins; software requirements change continuously.
@@ -121,15 +121,15 @@ Steel is sampled, too. Software can be.
 
 ## References
 
-\[1\] C. Jørgensen, "No Tensile Strength to Measure," no-tensile-strength-to-measure.netlify.app, 2026. Rebuttal to "Software Civil Engineering" arguing four structural disanalogies between civil engineering and agentic software development.
+\[1\] C. Jørgensen, "No Tensile Strength to Measure," [no-tensile-strength-to-measure.netlify.app](https://no-tensile-strength-to-measure.netlify.app/), 2026. Rebuttal to "Software Civil Engineering" arguing four structural disanalogies between civil engineering and agentic software development.
 
 \[2\] P. Naur, "Programming as Theory Building," *Microprocessing and Microprogramming*, vol. 15, no. 5, pp. 253–261, 1985. Argues that programming is the construction of a mental theory that cannot be fully externalized into specifications.
 
 \[3\] N. Tillmann and J. de Halleux, "Pex: White Box Test Generation for .NET," in *TAP 2008*, LNCS 4966, B. Beckert and R. Hähnle, Eds. Berlin: Springer-Verlag, 2008, pp. 134–153. Demonstrates dynamic symbolic execution with Z3 applied to a core .NET component previously tested for five years by forty testers, finding seventeen unique errors including a serious issue at 43% block coverage, fully automatically.
 
-\[4\] J. Fox and F. Wei, "Fast property testing and metrics for permutations," arXiv:1611.01270v2 \[math.CO\], 2018. Proves that hereditary permutation properties are two-sided testable with query complexity polynomial in 1/ε and independent of input size; the universal bound is M = 20000/ε² (Theorem 1.8).
+\[4\] J. Fox and F. Wei, "Fast property testing and metrics for permutations," [arXiv:1611.01270v2](https://arxiv.org/abs/1611.01270) \[math.CO\], 2018. Proves that hereditary permutation properties are two-sided testable with query complexity polynomial in 1/ε and independent of input size; the universal bound is M = 20000/ε² (Theorem 1.8).
 
-\[5\] M. Rosén-Lidholm, "Software Civil Engineering: From Craft to Discipline," 2026. The original article to which the rebuttal responds, and to which this reply is, in turn, a response.
+\[5\] M. Rosén-Lidholm, "[[software-civil-engineering|Software Civil Engineering: From Craft to Discipline]]," 2026. The original article to which the rebuttal responds, and to which this reply is, in turn, a response.
 
 \[6\] R. Rubinfeld and M. Sudan, "Robust characterizations of polynomials with applications to program testing," *SIAM Journal on Computing*, vol. 25, no. 2, pp. 252–271, 1996. Foundational paper in property testing.
 
