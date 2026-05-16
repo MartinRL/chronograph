@@ -2,7 +2,7 @@ name: Daily D4 Digest
 
 on:
   schedule:
-    - cron: '0 5 * * *'  # 05:00 UTC = 07:00 CEST
+    - cron: '47 4 * * *'  # 04:47 UTC = 06:47 CEST (off-the-hour to reduce GitHub Actions scheduler skip risk)
   workflow_dispatch:       # Manual trigger
 
 permissions:
