@@ -1,6 +1,33 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
+const isoDateRegex = /^\d{4}-\d{2}-\d{2}$/
+
+const explorerSortFn = (
+  a: { slugSegment: string; displayName: string; isFolder: boolean },
+  b: { slugSegment: string; displayName: string; isFolder: boolean },
+) => {
+  // Pin "Software Civil Engineering" above "Daily D4 Digest"
+  if (a.slugSegment === "software-civil-engineering") return -1
+  if (b.slugSegment === "software-civil-engineering") return 1
+
+  // Folders before files
+  if (a.isFolder !== b.isFolder) return a.isFolder ? -1 : 1
+
+  // Date-named files (YYYY-MM-DD) sort in reverse chronological order.
+  // Match against slugSegment (the filename) rather than displayName (which is
+  // the frontmatter title and may be prefixed, e.g. "Daily D4 Digest — 2026-05-15").
+  if (isoDateRegex.test(a.slugSegment) && isoDateRegex.test(b.slugSegment)) {
+    return b.slugSegment.localeCompare(a.slugSegment)
+  }
+
+  // Default: alphabetical
+  return a.displayName.localeCompare(b.displayName, undefined, {
+    numeric: true,
+    sensitivity: "base",
+  })
+}
+
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -42,26 +69,10 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer({
-      sortFn: (a, b) => {
-        // Pin "Software Civil Engineering" above "Daily D4 Digest"
-        if (a.slugSegment === "software-civil-engineering") return -1
-        if (b.slugSegment === "software-civil-engineering") return 1
-
-        // Default: folders before files, then alphabetical
-        if (a.isFolder !== b.isFolder) return a.isFolder ? -1 : 1
-        return a.displayName.localeCompare(b.displayName, undefined, {
-          numeric: true,
-          sensitivity: "base",
-        })
-      },
-    }),
+    Component.Explorer({ sortFn: explorerSortFn }),
     Component.DesktopOnly(Component.Graph()),
   ],
-  right: [
-    Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
-  ],
+  right: [Component.DesktopOnly(Component.TableOfContents()), Component.Backlinks()],
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
@@ -78,17 +89,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer({
-      sortFn: (a, b) => {
-        if (a.slugSegment === "software-civil-engineering") return -1
-        if (b.slugSegment === "software-civil-engineering") return 1
-        if (a.isFolder !== b.isFolder) return a.isFolder ? -1 : 1
-        return a.displayName.localeCompare(b.displayName, undefined, {
-          numeric: true,
-          sensitivity: "base",
-        })
-      },
-    }),
+    Component.Explorer({ sortFn: explorerSortFn }),
   ],
   right: [],
 }
