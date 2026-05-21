@@ -1,8 +1,9 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
-const isoDateRegex = /^\d{4}-\d{2}-\d{2}$/
-
+// NOTE: This function is serialized via .toString() and rebuilt in the browser
+// with `new Function(...)`, so it must be self-contained — no references to
+// outer-scope variables (they will be undefined at runtime in the explorer).
 const explorerSortFn = (
   a: { slugSegment: string; displayName: string; isFolder: boolean },
   b: { slugSegment: string; displayName: string; isFolder: boolean },
@@ -17,6 +18,7 @@ const explorerSortFn = (
   // Date-named files (YYYY-MM-DD) sort in reverse chronological order.
   // Match against slugSegment (the filename) rather than displayName (which is
   // the frontmatter title and may be prefixed, e.g. "Daily D4 Digest — 2026-05-15").
+  const isoDateRegex = /^\d{4}-\d{2}-\d{2}$/
   if (isoDateRegex.test(a.slugSegment) && isoDateRegex.test(b.slugSegment)) {
     return b.slugSegment.localeCompare(a.slugSegment)
   }
