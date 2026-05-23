@@ -80,7 +80,7 @@
   <!-- ════════════════════════════════════════════════════════ -->
   <!-- STATE (gray, bottom-left)                                -->
   <!-- ════════════════════════════════════════════════════════ -->
-  <rect x="100" y="288" width="100" height="50" rx="6" fill="#7f8c8d"/>
+  <rect x="100" y="288" width="100" height="50" rx="6" fill="#2ecc71"/>
   <text x="150" y="318" text-anchor="middle" font-size="14" font-weight="500" fill="#fff">state</text>
 
   <!-- Arrow: state → command (up left side, right-angle turn) -->
@@ -92,7 +92,7 @@
   <line x1="40" y1="370" x2="620" y2="370" stroke="#d5dbdb" stroke-width="1"/>
 
   <!-- Given → state -->
-  <text x="105" y="395" text-anchor="middle" font-size="10" font-weight="700" fill="#7f8c8d">Given</text>
+  <text x="105" y="395" text-anchor="middle" font-size="10" font-weight="700" fill="#2ecc71">Given</text>
   <text x="105" y="410" text-anchor="middle" font-size="9" fill="#566573">prior events → state</text>
   <text x="105" y="424" text-anchor="middle" font-size="9" fill="#566573" font-style="italic">(via evolve)</text>
 
@@ -103,7 +103,7 @@
 
   <!-- Then → events or rejection -->
   <text x="530" y="395" text-anchor="middle" font-size="10" font-weight="700" fill="#e67e22">Then</text>
-  <text x="530" y="410" text-anchor="middle" font-size="9" fill="#566573">events produced</text>
+  <text x="530" y="410" text-anchor="middle" font-size="9" fill="#566573">event(s) produced</text>
   <text x="530" y="424" text-anchor="middle" font-size="9" fill="#c0392b" font-style="italic">or command rejected</text>
 
 </svg>
