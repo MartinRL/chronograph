@@ -1,10 +1,16 @@
+using System.Text.RegularExpressions;
 using DailyD4Digest.Models;
 using Microsoft.Extensions.Logging;
 
 namespace DailyD4Digest.Output;
 
-public sealed class MarkdownWriter(ILogger<MarkdownWriter> logger)
+public sealed partial class MarkdownWriter(ILogger<MarkdownWriter> logger)
 {
+    // ponytail: escape only currency ($ before a digit) so KaTeX doesn't parse
+    // "$141 ... $8.23" as inline math. Genuine $x$ math delimiters are left alone.
+    [GeneratedRegex(@"(?<!\\)\$(?=\d)")]
+    private static partial Regex CurrencyDollar();
+
     public async Task WriteAsync(DailyBrief brief, string outputDir, CancellationToken ct = default)
     {
         Directory.CreateDirectory(outputDir);
@@ -20,7 +26,7 @@ public sealed class MarkdownWriter(ILogger<MarkdownWriter> logger)
 
         // The synthesis prompt should produce the full markdown including frontmatter.
         // If the model didn't include frontmatter, prepend it.
-        var content = brief.Markdown;
+        var content = CurrencyDollar().Replace(brief.Markdown, @"\$");
         if (!content.StartsWith("---"))
         {
             var frontmatter = $"""
