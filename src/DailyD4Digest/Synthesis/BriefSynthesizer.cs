@@ -96,6 +96,13 @@ public sealed class BriefSynthesizer(ILogger<BriefSynthesizer> logger)
 
     private static string StripCodeFences(string text)
     {
+        // ponytail: model sometimes emits frontmatter, then repeats the whole doc inside a fence.
+        // Keep the fenced copy (it's the complete document).
+        var doubled = System.Text.RegularExpressions.Regex.Match(
+            text, @"\A---\r?\n[\s\S]*?\r?\n---\s*\r?\n```(?:markdown|md)?\s*\r?\n(---[\s\S]*)\z");
+        if (doubled.Success)
+            text = doubled.Groups[1].Value;
+
         if (text.StartsWith("```markdown", StringComparison.OrdinalIgnoreCase))
             text = text["```markdown".Length..];
         else if (text.StartsWith("```md", StringComparison.OrdinalIgnoreCase))
