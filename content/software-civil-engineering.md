@@ -201,7 +201,7 @@ The answer lies in a pattern that connects Event Modeling directly to verifiable
 
 A Decider is a pure, deterministic function: given the current state (derived from prior events) and a command, it produces the resulting events. No side effects, no infrastructure dependencies, no network calls. Just input, logic, output.
 
-![The Decider Pattern](decider-pattern.svg)
+![The Decider Pattern](representational-redundancy/assets/decider-pattern.svg)
 *The Decider: decide(state, command) → events or rejection; evolve(state, event) → state.*
 
 This purity is not accidental; it is an architectural choice. The Functional Core / Imperative Shell pattern (Gary Bernhardt, 2012 \[19\]) structures software so that all decision logic lives in pure functions at the center — the functional core — while all side effects (database I/O, HTTP, messaging) are pushed to a thin outer layer — the imperative shell. The Decider's `decide` and `evolve` functions ARE the functional core: values in, values out, no I/O. Event store persistence, endpoint handling, and event publishing are the imperative shell: thin wiring that orchestrates the core but contains no business logic.
