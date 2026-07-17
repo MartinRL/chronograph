@@ -32,7 +32,8 @@ logger.LogInformation("Starting Daily D4 Digest pipeline");
 logger.LogInformation("Output directory: {OutputDir}", outputDir);
 
 // Check idempotency
-var todayFile = Path.Combine(outputDir, $"{DateOnly.FromDateTime(DateTime.UtcNow):yyyy-MM-dd}.md");
+var todayUtc = DateOnly.FromDateTime(DateTime.UtcNow);
+var todayFile = Path.Combine(outputDir, $"{todayUtc:yyyy-MM}", $"{todayUtc:yyyy-MM-dd}.md");
 if (File.Exists(todayFile))
 {
     logger.LogInformation("Today's brief already exists at {Path}, exiting", todayFile);

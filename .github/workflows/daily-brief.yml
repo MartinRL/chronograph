@@ -27,7 +27,7 @@ jobs:
 
       - name: Pipeline summary
         run: |
-          BRIEF="content/digest/$(date +%Y-%m-%d).md"
+          BRIEF="content/digest/$(date +%Y-%m)/$(date +%Y-%m-%d).md"
           if [ -f "$BRIEF" ]; then
             echo "### Daily D4 Digest — $(date +%Y-%m-%d)" >> $GITHUB_STEP_SUMMARY
             head -10 "$BRIEF" | grep -E '^(sources_scanned|items_scored|items_selected):' | \

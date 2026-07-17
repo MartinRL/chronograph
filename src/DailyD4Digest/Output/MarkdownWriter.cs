@@ -13,10 +13,12 @@ public sealed partial class MarkdownWriter(ILogger<MarkdownWriter> logger)
 
     public async Task WriteAsync(DailyBrief brief, string outputDir, CancellationToken ct = default)
     {
-        Directory.CreateDirectory(outputDir);
+        // Briefs are grouped into month subfolders (YYYY-MM) to keep listings short
+        var monthDir = Path.Combine(outputDir, $"{brief.Date:yyyy-MM}");
+        Directory.CreateDirectory(monthDir);
 
         var fileName = $"{brief.Date:yyyy-MM-dd}.md";
-        var filePath = Path.Combine(outputDir, fileName);
+        var filePath = Path.Combine(monthDir, fileName);
 
         if (File.Exists(filePath))
         {

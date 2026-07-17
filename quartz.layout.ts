@@ -15,10 +15,11 @@ const explorerSortFn = (
   // Folders before files
   if (a.isFolder !== b.isFolder) return a.isFolder ? -1 : 1
 
-  // Date-named files (YYYY-MM-DD) sort in reverse chronological order.
-  // Match against slugSegment (the filename) rather than displayName (which is
-  // the frontmatter title and may be prefixed, e.g. "Daily D4 Digest — 2026-05-15").
-  const isoDateRegex = /^\d{4}-\d{2}-\d{2}$/
+  // Date-named entries (YYYY-MM-DD files, YYYY-MM month folders) sort in
+  // reverse chronological order. Match against slugSegment (the filename)
+  // rather than displayName (which is the frontmatter title and may be
+  // prefixed, e.g. "Daily D4 Digest — 2026-05-15").
+  const isoDateRegex = /^\d{4}-\d{2}(-\d{2})?$/
   if (isoDateRegex.test(a.slugSegment) && isoDateRegex.test(b.slugSegment)) {
     return b.slugSegment.localeCompare(a.slugSegment)
   }
