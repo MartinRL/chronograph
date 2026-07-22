@@ -1,3 +1,9 @@
+---
+title: '"The Spec Is the Product" Is a Slogan Until the Code Leaves Your Repo'
+description: "Everyone agrees verification is the bottleneck. Almost nobody draws the conclusion sitting in their .gitignore."
+created: 2026-07-22
+---
+
 # "The Spec Is the Product" Is a Slogan Until the Code Leaves Your Repo
 
 > Everyone agrees verification is the bottleneck. Almost nobody draws the conclusion
