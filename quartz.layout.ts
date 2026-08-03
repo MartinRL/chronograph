@@ -72,7 +72,13 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer({ sortFn: explorerSortFn }),
+    Component.Explorer({
+      sortFn: explorerSortFn,
+      // Deep-link-only pages: hidden from the sidebar tree, still reachable
+      // via direct URL and search. Serialized via .toString() like sortFn,
+      // so it must stay self-contained.
+      filterFn: (node) => !["tags", "cv", "cases"].includes(node.slugSegment),
+    }),
     Component.DesktopOnly(Component.Graph()),
   ],
   right: [Component.DesktopOnly(Component.TableOfContents()), Component.Backlinks()],
@@ -92,7 +98,13 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer({ sortFn: explorerSortFn }),
+    Component.Explorer({
+      sortFn: explorerSortFn,
+      // Deep-link-only pages: hidden from the sidebar tree, still reachable
+      // via direct URL and search. Serialized via .toString() like sortFn,
+      // so it must stay self-contained.
+      filterFn: (node) => !["tags", "cv", "cases"].includes(node.slugSegment),
+    }),
   ],
   right: [],
 }
