@@ -2,6 +2,7 @@
 title: "Martin Rosén-Lidholm, Cases"
 description: "Selected cases evidencing the claims in the CV: AI-native transformation, product operating models, and strategy-to-architecture alignment."
 created: 2026-08-03
+tags: [cases]
 ---
 # Martin Rosén-Lidholm — Cases
 

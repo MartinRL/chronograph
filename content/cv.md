@@ -2,6 +2,7 @@
 title: "Martin Rosén-Lidholm, CV"
 description: "CV of Martin Rosén-Lidholm: Product & Engineering executive scaling AI-native SaaS in regulated, document-heavy domains."
 created: 2026-08-03
+tags: [cv]
 ---
 
 # Martin Rosén-Lidholm
