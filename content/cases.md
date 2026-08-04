@@ -53,7 +53,7 @@ This document is a portfolio of selected cases that evidence the claims in [my C
 
 **Transferable pattern:** Downscaling is an architecture problem as much as an org problem; redesign both together or neither works.
 
-### Career Ladder (SaaS company, ~60 engineers, 10 EMs, 4 sites)
+### Career Ladder (SaaS company, ~60 engineers, 10 EMs, 4 sites across Europe)
 
 **Situation:** No explicit career ladder existed across a distributed engineering organization.
 
