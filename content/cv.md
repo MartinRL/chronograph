@@ -80,7 +80,7 @@ From Tetra Pak R&D (where I wrote my master's thesis) through a hyper-growing st
 
 - **Øredev**, Program Committee Member, 2014 - current, Malmö. Lead the leadership track and contribute to the architecture and .NET tracks of the region's leading software development conference (1,300 attendees yearly).
 - **Global Agile Summit**, Tallinn, Program Committee Member, curating the Developer track.
-- Long-time active member: Copenhagen and Skåne .NET user groups, #AgilityLab Copenhagen, Domain-Driven Design Copenhagen (e.g. expert panel member).
+- Long-time active member: Copenhagen and Skåne .NET user groups, AgilityLab Copenhagen, Domain-Driven Design Copenhagen (e.g. expert panel member).
 - Active voice in the industry: short and punchy on [LinkedIn](https://www.linkedin.com/in/martin-rosen-lidholm/), longer form at [Chronograph](https://martinrl.github.io/chronograph). Alex Bunardzic: ["This is the second time I've heard a fresh, breakthrough idea from Martin."](https://www.linkedin.com/feed/update/urn:li:activity:7485706695508156416/)
 
 ## Education
