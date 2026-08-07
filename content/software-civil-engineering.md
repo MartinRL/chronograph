@@ -185,13 +185,13 @@ These gaps must be filled for the engineering analogy to hold.
 
 Terraform operates at the *infrastructure* level: it specifies resources, not behavior. Lifting the abstraction to the product level produces something fundamentally different:
 
-> "I want a scholar publishing system where a publisher can submit an article, a compliance check verifies funder mandates automatically, and a dashboard shows status in real time — with max 200ms latency, SOC2-compliant, scalable to 50,000 active publications."
+> "I want a scholarly publishing system where a publisher can submit an article, a compliance check verifies funder mandates automatically, and a dashboard shows status in real time — with max 200ms latency, SOC2-compliant, scalable to 50,000 active publications."
 
 This declaration spans behavior, constraints, and operational requirements simultaneously. The specification lives at the product level, and the "engine" (AI agents, human developers, or a hybrid) realizes it.
 
 ### 4.2 Where the analogy diverges: simulation before production
 
-Terraform's lifecycle handles state transitions, but software products *behave.* A scholar publishing system processes thousands of concurrent submissions, enforces compliance rules that change mid-workflow, and must respond gracefully when a funder alters its open-access mandate during an active publication cycle. A state-transition diff cannot answer these behavioral questions.
+Terraform's lifecycle handles state transitions, but software products *behave.* A scholarly publishing system processes thousands of concurrent submissions, enforces compliance rules that change mid-workflow, and must respond gracefully when a funder alters its open-access mandate during an active publication cycle. A state-transition diff cannot answer these behavioral questions.
 
 What we need is the declarative lifecycle *plus* the ability to simulate behavior before production, to prove the design before realization. The question is: what gives us that simulation capability at the product level?
 
