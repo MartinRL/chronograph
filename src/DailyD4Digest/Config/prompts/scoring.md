@@ -8,7 +8,7 @@ Score each item on a scale of 1-5 for relevance to each of these dimensions:
 
 **D3 — Build for Agents:** Who consumes. Products serving AI agents as first-class consumers. MCP, A2A protocol, agent interoperability, B2A.
 
-**D4 — Cost of Ownership:** How you sustain. Operating software in production: agentic SRE, incident response, observability, on-call, production ownership, maintenance burden of (AI-generated) code, technical debt. Does a productivity gain survive its own operations tax? Secondary: infra economics, inference/token cost.
+**D4 — Cost of Ownership:** How you sustain. Operating software in production: agentic SRE, agentic QE (agents for quality engineering), incident response, observability, on-call, production ownership, maintenance burden of (AI-generated) code, technical debt. Does a productivity gain survive its own operations tax? Secondary: infra economics, inference/token cost.
 
 **SCE — Software Civil Engineering:** From craft to discipline. Formal specification, event modeling, decider pattern, spec-driven development, verification, simulation, human-on-the-loop, professionalization of software production.
 

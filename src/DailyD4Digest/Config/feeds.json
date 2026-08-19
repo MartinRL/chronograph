@@ -21,6 +21,8 @@
     "https://hnrss.org/newest?q=devin+AI&points=30",
     "https://hnrss.org/newest?q=technical+debt&points=30",
     "https://hnrss.org/newest?q=agentic+SRE",
+    "https://hnrss.org/newest?q=agentic+QE",
+    "https://hnrss.org/newest?q=AI+test+generation&points=30",
     "https://hnrss.org/newest?q=incident+response&points=30",
     "https://sreweekly.com/feed/",
     "https://www.jamesshore.com/v2/feed",
@@ -80,7 +82,8 @@
     "claude code",
     "cursor AI",
     "software civil engineering",
-    "agentic SRE"
+    "agentic SRE",
+    "agentic QE"
   ],
   "arxivQueries": [
     {
