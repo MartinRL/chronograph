@@ -11,6 +11,13 @@ tags: [cv]
 
 **VP Product & Engineering | Scaling AI-native SaaS in regulated, document-heavy domains | Agentic engineering + product operating models**
 
+> "I'm glad to see this map, the experience… I got that view after a few of my experiments in that direction."
+> — Alistair Cockburn, Agile Manifesto co-author, [reposting my Wardley-mapped agentic engineering strategy](https://www.linkedin.com/feed/update/urn:li:activity:7492155597677744128/)
+
+![Wardley map of my agentic engineering strategy](cv/assets/wardley-agentic-engineering-v5.svg)
+
+*The map Alistair Cockburn reposted.*
+
 ## About
 
 Product and Engineering leader who scales SaaS platforms in regulated, document-heavy domains. Currently VP of Product & Engineering at ChronosHub (an ACS company; IEEE is the largest customer), rebuilding a 30-person product and engineering organization around agentic engineering and AI-native products, for humans and agents alike. I install product operating models, raise delivery velocity, and make engineering organizations AI-native without losing governance. Underneath the org design I am a systems thinker: I map company and product strategy down to architecture and implementation using Wardley Mapping, Rumelt's kernel and tests, and event modeling. That spans both zero-to-one and one-to-n: finding what earns through fast build-measure-learn discovery, then keeping it earning as durable, operated product. I never hesitate to roll up my sleeves, be it code, automation, or workshops, where the most impact is produced. Selected cases evidencing these claims: [martinrl.github.io/cases](https://martinrl.github.io/cases).
