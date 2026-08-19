@@ -9,7 +9,7 @@ tags: [cv]
 
 +45 31 76 37 01 | martin@rosenlidholm.se | [linkedin.com/in/martin-rosen-lidholm](https://www.linkedin.com/in/martin-rosen-lidholm/) | Malmö/Copenhagen
 
-**VP Product & Engineering | Scaling AI-native SaaS in regulated, document-heavy domains | Agentic engineering + product operating models**
+**VP Product & Engineering | Scaling AI-native B2B SaaS | Agentic engineering + product operating models**
 
 > "I'm glad to see this map, the experience… I got that view after a few of my experiments in that direction."\
 > — Alistair Cockburn, Agile Manifesto co-author, [reposting my Wardley-mapped agentic engineering strategy](https://www.linkedin.com/feed/update/urn:li:activity:7492155597677744128/)
