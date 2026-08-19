@@ -19,10 +19,10 @@
       "keywords": ["MCP", "model context protocol", "A2A protocol", "agent interoperability", "B2A", "build for agents", "agent-first API"]
     },
     "D4": {
-      "name": "Performance & Cost at Scale",
+      "name": "Cost of Ownership",
       "question": "How you sustain",
-      "description": "Agent-driven traffic amplifies system load 10-100x. Right-sized, hardware-sympathetic architecture on modern infrastructure. 10x scale at fraction of cost vs over-engineered cloud.",
-      "keywords": ["AI inference cost", "hardware sympathetic", "LLM serving", "AI at scale", "cloud economics", "bare metal", "modern hardware"]
+      "description": "2x output needs 1/2 cost of ownership, or the speed is borrowed. Tracks maintenance burden, technical debt, operability, production ownership, run cost; right-sized infrastructure secondary.",
+      "keywords": ["maintenance cost", "technical debt", "code health", "operability", "production ownership", "total cost of ownership", "legacy code", "code maintainability", "AI code maintenance", "cloud economics", "infrastructure cost"]
     },
     "SCE": {
       "name": "Software Civil Engineering",

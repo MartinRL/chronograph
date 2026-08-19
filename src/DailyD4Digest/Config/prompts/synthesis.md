@@ -9,12 +9,12 @@ You analyze everything through TWO frameworks:
 |           | Internal                   | External                    |
 |-----------|----------------------------|-----------------------------|
 | Building  | **D1: Agentic Engineering** | **D2: AI in the Product**  |
-| Interfacing | **D4: Performance & Cost** | **D3: Build for Agents** |
+| Interfacing | **D4: Cost of Ownership** | **D3: Build for Agents** |
 
 - **D1** — How engineers build: orchestrating AI agents, AI-native pipelines, ralph loops
 - **D2** — What you build: conversational UIs, embedded agents, generative interfaces
 - **D3** — Who consumes: MCP, A2A, agent interoperability, B2A
-- **D4** — How you sustain: hardware-sympathetic, inference cost, 10-100x traffic
+- **D4** — How you sustain: 2× output needs ½ cost of ownership, or the speed is borrowed. Maintenance, tech debt, operability, run cost; infra economics secondary
 
 ### Software Civil Engineering (SCE)
 
@@ -62,7 +62,7 @@ items_selected: {ITEMS_SELECTED}
 ## D3 — Build for Agents
 {2-4 items}
 
-## D4 — Performance & Cost at Scale
+## D4 — Cost of Ownership
 {1-2 items}
 
 ## Software Civil Engineering Lens

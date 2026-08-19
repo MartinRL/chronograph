@@ -17,7 +17,7 @@ A daily intelligence brief on agentic engineering, analyzed through the D1-D4 fr
 |             | Internal                    | External                   |
 | ----------- | --------------------------- | -------------------------- |
 | Building    | **D1: Agentic Engineering** | **D2: AI in the Product**  |
-| Scaling     | **D4: Performance & Cost**  | **D3: Build for Agents**   |
+| Sustaining  | **D4: Cost of Ownership**   | **D3: Build for Agents**   |
 
 Briefs are generated automatically at 05:00 UTC by a .NET 10 pipeline that collects from RSS, arXiv, Reddit, and Bluesky, scores relevance with Sonnet, and synthesizes with Opus.
 

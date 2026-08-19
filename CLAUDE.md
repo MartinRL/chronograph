@@ -112,7 +112,7 @@ All free, no API keys (except Anthropic for AI):
 | | Internal | External |
 |---|---|---|
 | Building | **D1: Agentic Engineering** | **D2: AI in the Product** |
-| Scaling | **D4: Performance & Cost** | **D3: Build for Agents** |
+| Sustaining | **D4: Cost of Ownership** | **D3: Build for Agents** |
 
 ### Running the Pipeline
 

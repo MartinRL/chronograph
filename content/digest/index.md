@@ -16,7 +16,7 @@ A daily intelligence brief on **agentic engineering**, analyzed through two lens
 |             | Internal                      | External                     |
 | ----------- | ----------------------------- | ---------------------------- |
 | Building    | **D1: Agentic Engineering**   | **D2: AI in the Product**    |
-| Scaling     | **D4: Performance & Cost**    | **D3: Build for Agents**     |
+| Sustaining  | **D4: Cost of Ownership**     | **D3: Build for Agents**     |
 
 > [!info]- D1 — Agentic Engineering · *how we build*
 > Engineers evolve from writing code to orchestrating AI agents in an AI-native architecture and pipeline.
@@ -27,8 +27,8 @@ A daily intelligence brief on **agentic engineering**, analyzed through two lens
 > [!info]- D3 — Build for Agents · *who consumes*
 > Products serve AI agents as first-class consumers via interoperability protocols.
 
-> [!info]- D4 — Performance & Cost · *how we sustain*
-> Agent traffic amplifies load 10–100×. Right-sized infra delivers 10× scale at a fraction of cost.
+> [!info]- D4 — Cost of Ownership · *how we sustain*
+> 2× output needs ½ cost of ownership — or the speed is borrowed, not gained.
 
 ## [Software Civil Engineering](https://martinrl.github.io/chronograph/software-civil-engineering)
 
