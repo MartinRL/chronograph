@@ -11,7 +11,7 @@ tags: [cv]
 
 **VP Product & Engineering | Scaling AI-native SaaS in regulated, document-heavy domains | Agentic engineering + product operating models**
 
-> "I'm glad to see this map, the experience… I got that view after a few of my experiments in that direction."
+> "I'm glad to see this map, the experience… I got that view after a few of my experiments in that direction."\
 > — Alistair Cockburn, Agile Manifesto co-author, [reposting my Wardley-mapped agentic engineering strategy](https://www.linkedin.com/feed/update/urn:li:activity:7492155597677744128/)
 
 ![Wardley map of my agentic engineering strategy](cv/assets/wardley-agentic-engineering-v5.svg)
