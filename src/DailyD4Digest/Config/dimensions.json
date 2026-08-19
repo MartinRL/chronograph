@@ -21,8 +21,8 @@
     "D4": {
       "name": "Cost of Ownership",
       "question": "How you sustain",
-      "description": "2x output needs 1/2 cost of ownership, or the speed is borrowed. Tracks maintenance burden, technical debt, operability, production ownership, run cost; right-sized infrastructure secondary.",
-      "keywords": ["maintenance cost", "technical debt", "code health", "operability", "production ownership", "total cost of ownership", "legacy code", "code maintainability", "AI code maintenance", "cloud economics", "infrastructure cost"]
+      "description": "2x output needs 1/2 cost of ownership, or the speed is borrowed. Tracks operating software in production: agentic SRE, incident response, observability, production ownership, maintenance burden, technical debt; infra economics secondary.",
+      "keywords": ["agentic SRE", "incident response", "observability", "on-call", "production ownership", "maintenance cost", "technical debt", "code health", "operability", "total cost of ownership", "AI code maintenance"]
     },
     "SCE": {
       "name": "Software Civil Engineering",

@@ -20,6 +20,9 @@
     "https://hnrss.org/newest?q=cursor+AI&points=30",
     "https://hnrss.org/newest?q=devin+AI&points=30",
     "https://hnrss.org/newest?q=technical+debt&points=30",
+    "https://hnrss.org/newest?q=agentic+SRE",
+    "https://hnrss.org/newest?q=incident+response&points=30",
+    "https://sreweekly.com/feed/",
     "https://www.jamesshore.com/v2/feed",
     "https://codescene.com/blog/rss.xml",
     "https://charity.wtf/feed/",
@@ -55,6 +58,8 @@
     "LocalLLaMA",
     "ClaudeAI",
     "ExperiencedDevs",
+    "sre",
+    "devops",
     "softwarearchitecture",
     "CQRS",
     "cursor",
@@ -74,7 +79,8 @@
     "spec driven development",
     "claude code",
     "cursor AI",
-    "software civil engineering"
+    "software civil engineering",
+    "agentic SRE"
   ],
   "arxivQueries": [
     {
