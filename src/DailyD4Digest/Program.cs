@@ -104,6 +104,12 @@ if (scored.Count == 0)
 // 4. ENRICH — fetch full content for top items
 logger.LogInformation("Step 4/6: ENRICH");
 var topItems = scored.Take(12).ToList();
+
+// ponytail: global MaxScore ranking lets multi-dimension arXiv papers crowd out
+// single-dimension ops items — guarantee the top-2 D4 items a seat at the table
+foreach (var d4Item in scored.Where(s => s.D4Score >= 3).OrderByDescending(s => s.D4Score).Take(2))
+    if (!topItems.Contains(d4Item))
+        topItems.Add(d4Item);
 var http = httpFactory.CreateClient();
 var enriched = new List<ScoredItem>();
 
