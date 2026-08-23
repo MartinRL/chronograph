@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "en-US",
-    baseUrl: "martinrl.github.io/chronograph",
+    baseUrl: "chronograph.rosenlidholm.se",
     ignorePatterns: ["private", "templates", ".obsidian", "src", "*.csproj", "*.slnx", "*.cs", "*.json"],
     defaultDateType: "modified",
     theme: {
