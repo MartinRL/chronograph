@@ -55,7 +55,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ContentMeta(),
     Component.AuthorInfo({
       name: "Martin Rosén-Lidholm",
-      portraitPath: "/chronograph/static/mrl-portrait.jpg",
+      portraitPath: "/static/mrl-portrait.jpg",
       linkedinUrl: "https://www.linkedin.com/in/martin-rosen-lidholm/",
     }),
     Component.TagList(),
