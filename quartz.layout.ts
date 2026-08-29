@@ -56,7 +56,6 @@ export const defaultContentPageLayout: PageLayout = {
     Component.AuthorInfo({
       name: "Martin Rosén-Lidholm",
       portraitPath: "/static/mrl-portrait.jpg",
-      linkedinUrl: "https://www.linkedin.com/in/martin-rosen-lidholm/",
     }),
     Component.TagList(),
   ],

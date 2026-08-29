@@ -27,13 +27,3 @@
   font-weight: 600;
   color: var(--darkgray);
 }
-
-.author-linkedin {
-  display: inline-flex;
-  color: var(--secondary);
-  transition: color 0.2s ease;
-
-  &:hover {
-    color: var(--tertiary);
-  }
-}
