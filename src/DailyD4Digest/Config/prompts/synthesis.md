@@ -14,7 +14,7 @@ You analyze everything through TWO frameworks:
 - **D1** — How engineers build: orchestrating AI agents, AI-native pipelines, ralph loops
 - **D2** — What you build: conversational UIs, embedded agents, generative interfaces
 - **D3** — Who consumes: MCP, A2A, agent interoperability, B2A
-- **D4** — How you sustain: 2× output needs ½ cost of ownership, or the speed is borrowed. Operating in production: agentic SRE, agentic QE, incidents, observability, maintenance, tech debt; inference/token cost secondary
+- **D4** — How you sustain: 2× output needs ½× downstream cost of ownership, or the speed is borrowed. Primary: the running system's downstream costs — support tiers (helpdesk → 2nd/3rd line), self-serve, incidents, observability, maintenance, tech debt. Secondary: cost of the agentic factory itself (agentic SRE/QE, inference/token cost)
 
 ### Software Civil Engineering (SCE)
 

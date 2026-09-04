@@ -21,8 +21,8 @@
     "D4": {
       "name": "Cost of Ownership",
       "question": "How you sustain",
-      "description": "2x output needs 1/2 cost of ownership, or the speed is borrowed. Tracks operating software in production: agentic SRE, agentic QE, incident response, observability, production ownership, maintenance burden, technical debt; infra economics secondary.",
-      "keywords": ["agentic SRE", "agentic QE", "quality engineering", "incident response", "observability", "on-call", "production ownership", "maintenance cost", "technical debt", "code health", "operability", "total cost of ownership", "AI code maintenance"]
+      "description": "Every 2x output needs 1/2x downstream cost of ownership, or the speed is borrowed. Primary: downstream costs of the running system — helpdesk tickets, self-serve deflection, 2nd/3rd line support, incident response, on-call, observability, maintenance burden, technical debt. Secondary: cost of the agentic factory itself — agentic SRE/QE, infra economics, inference/token cost.",
+      "keywords": ["customer support", "support ticket", "helpdesk", "self-serve", "support deflection", "ticket volume", "incident response", "observability", "on-call", "production ownership", "maintenance cost", "technical debt", "code health", "operability", "total cost of ownership", "AI code maintenance", "quality engineering", "agentic SRE", "agentic QE"]
     },
     "SCE": {
       "name": "Software Civil Engineering",
