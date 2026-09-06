@@ -4,6 +4,7 @@ description: "Gorman, Böckeler, DHH and Horthy each named a different problem w
 created: 2026-09-05
 status: published
 venue: chronograph, linkedin
+published: https://chronograph.rosenlidholm.se/two-stage-sdd-rocket
 ---
 
 # Four Thought-Leaders Described the Same Hole. The Two-Stage SDD Rocket Fills It.
