@@ -1,5 +1,5 @@
 ---
-title: "Four Thought-Leaders Described the Same Hole. The Two-Stage SDD Rocket Fills It."
+title: "The Two-Stage Rocket Fills the Hole the Thought-Leaders Identified"
 description: "Gorman, Böckeler, DHH and Horthy each named a different problem with agentic development. They share a root cause, and the fix has been running in production for a while."
 created: 2026-09-05
 status: published
@@ -7,7 +7,7 @@ venue: chronograph, linkedin
 published: https://chronograph.rosenlidholm.se/two-stage-sdd-rocket
 ---
 
-# Four Thought-Leaders Described the Same Hole. The Two-Stage SDD Rocket Fills It.
+# The Two-Stage Rocket Fills the Hole the Thought-Leaders Identified
 
 > Four recent interviews with industry thought-leaders, four sharp diagnoses, one undrawn conclusion: the LLM is doing the lion's share of writing the code, and it should not be.
 
