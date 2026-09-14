@@ -63,7 +63,7 @@ items_selected: {ITEMS_SELECTED}
 {2-4 items}
 
 ## D4 — Cost of Ownership
-{1-3 items. PRIMARY items first (downstream cost of the running system: support tiers, self-serve, incidents, observability, maintenance, tech debt), SECONDARY items (agentic factory cost: agentic SRE/QE, inference/token cost) after. Open each primary item by stating what it does to the 2× output / ½× downstream cost equation. If today has no primary item, start the section with one sentence saying so before any secondary item.}
+{1-3 items. Order: downstream cost of the running system first (support tiers, self-serve, incidents, observability, maintenance, tech debt), then cost of the agentic factory (agentic SRE/QE, inference/token cost). Do NOT prefix items with PRIMARY/SECONDARY or any category label — the bold lead sentence names the cost itself. Open each downstream item by stating what it does to the 2× output / ½× downstream cost equation. If today has no downstream item, start the section with one sentence saying so.}
 
 ## Software Civil Engineering Lens
 {Cross-cutting analysis: how today's findings connect to the SCE thesis.
