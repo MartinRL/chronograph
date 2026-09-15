@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" font-family="sans-serif">
+  <!-- column headers -->
+  <text x="300" y="48" text-anchor="middle" font-size="15" fill="#555">derived at build time</text>
+  <text x="590" y="48" text-anchor="middle" font-size="15" fill="#555">derived at read time</text>
+  <!-- row labels -->
+  <text x="85" y="145" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">the write side</text>
+  <text x="85" y="164" text-anchor="middle" font-size="12" fill="#777">building the system</text>
+  <text x="85" y="305" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">the shipped side</text>
+  <text x="85" y="324" text-anchor="middle" font-size="12" fill="#777">using the product</text>
+  <!-- cell: part one -->
+  <rect x="160" y="70" width="280" height="150" rx="8" fill="#eef3fb" stroke="#9db6d9"/>
+  <text x="178" y="102" font-size="16" font-weight="bold" fill="#1d4ed8">Part one</text>
+  <text x="178" y="128" font-size="13" fill="#444">the domain strata, compiled</text>
+  <text x="178" y="147" font-size="13" fill="#444">from the spec; verified by</text>
+  <text x="178" y="166" font-size="13" fill="#444">the compiler</text>
+  <!-- cell: rewilding -->
+  <rect x="450" y="70" width="280" height="150" rx="8" fill="#f2f0fa" stroke="#a99cce"/>
+  <text x="468" y="102" font-size="16" font-weight="bold" fill="#5b4a9e">Rewilding</text>
+  <text x="468" y="128" font-size="13" fill="#444">developer-facing views,</text>
+  <text x="468" y="147" font-size="13" fill="#444">regenerated from the system</text>
+  <text x="468" y="166" font-size="13" fill="#444">on demand, so they cannot lie</text>
+  <!-- cell: the deleted stratum -->
+  <rect x="160" y="230" width="280" height="150" rx="8" fill="#f5f5f5" stroke="#b9b9b9" stroke-dasharray="6 4"/>
+  <text x="178" y="262" font-size="16" font-weight="bold" fill="#7a7a7a">Screens as artifacts</text>
+  <text x="178" y="288" font-size="13" fill="#666">hand-written or generated,</text>
+  <text x="178" y="307" font-size="13" fill="#666">materialized ahead of time,</text>
+  <text x="178" y="326" font-size="13" fill="#666">aging from creation</text>
+  <text x="178" y="352" font-size="12" font-style="italic" fill="#8a8a8a">the stratum this article deleted</text>
+  <!-- cell: the interpreter -->
+  <rect x="450" y="230" width="280" height="150" rx="8" fill="#e7f4ec" stroke="#5fa87f" stroke-width="2"/>
+  <text x="468" y="262" font-size="16" font-weight="bold" fill="#0e7a4e">The interpreter</text>
+  <text x="468" y="288" font-size="13" fill="#444">shipped screens, computed</text>
+  <text x="468" y="307" font-size="13" fill="#444">from spec and live state,</text>
+  <text x="468" y="326" font-size="13" fill="#444">at the moment of asking</text>
+</svg>

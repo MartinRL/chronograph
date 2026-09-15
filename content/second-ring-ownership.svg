@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 380" font-family="sans-serif">
+  <!-- contract boundary between spec and residue -->
+  <text x="250" y="30" text-anchor="middle" font-size="12" fill="#888">three contracts hold this boundary</text>
+  <text x="250" y="48" text-anchor="middle" font-size="12" font-style="italic" fill="#888">presence · defaults · derived behavior</text>
+  <line x1="250" y1="58" x2="250" y2="360" stroke="#aaa" stroke-dasharray="5 4"/>
+  <!-- xm spec -->
+  <rect x="20" y="70" width="220" height="290" rx="8" fill="#fbf3dc" stroke="#d8bd6a"/>
+  <text x="32" y="100" font-size="16" font-weight="bold" fill="#7a621c">xm spec</text>
+  <text x="32" y="120" font-size="12" font-style="italic" fill="#8a793e">judgment as data</text>
+  <text x="32" y="152" font-size="13" fill="#444">composition (views, commands)</text>
+  <text x="32" y="174" font-size="13" fill="#444">salience tiers</text>
+  <text x="32" y="196" font-size="13" fill="#444">field order</text>
+  <text x="32" y="218" font-size="13" fill="#444">names, every human string</text>
+  <text x="32" y="240" font-size="13" fill="#444">empty states</text>
+  <text x="32" y="262" font-size="13" fill="#444">design tokens (DTCG)</text>
+  <!-- materializers -->
+  <rect x="260" y="70" width="220" height="290" rx="8" fill="#e8eef8" stroke="#8fa8cc"/>
+  <text x="272" y="100" font-size="16" font-weight="bold" fill="#2d4d7a">materializers</text>
+  <text x="272" y="120" font-size="12" font-style="italic" fill="#5b7194">judgment as pure functions</text>
+  <text x="272" y="152" font-size="13" fill="#444">presence, deliberate omissions</text>
+  <text x="272" y="174" font-size="13" fill="#444">hoisting into headings</text>
+  <text x="272" y="196" font-size="13" fill="#444">phrasing from live state</text>
+  <text x="272" y="218" font-size="13" fill="#444">(state, viewer) → surface name</text>
+  <!-- interpreter -->
+  <rect x="500" y="70" width="220" height="290" rx="8" fill="#e7f4ec" stroke="#7dbb95"/>
+  <text x="512" y="100" font-size="16" font-weight="bold" fill="#0e7a4e">interpreter</text>
+  <text x="512" y="120" font-size="12" font-style="italic" fill="#4d8a68">one living copy of rendering</text>
+  <text x="512" y="152" font-size="13" fill="#444">geometry and layout</text>
+  <text x="512" y="174" font-size="13" fill="#444">tiers → disclosure</text>
+  <text x="512" y="196" font-size="13" fill="#444">six field kinds, sealed</text>
+  <text x="512" y="218" font-size="13" fill="#444">commands after content</text>
+  <text x="512" y="240" font-size="13" fill="#444">default forms</text>
+  <!-- opt-outs -->
+  <rect x="740" y="70" width="220" height="290" rx="8" fill="#f6e8ee" stroke="#cc8fae"/>
+  <text x="752" y="100" font-size="16" font-weight="bold" fill="#8f3d63">opt-out Razor</text>
+  <text x="752" y="120" font-size="12" font-style="italic" fill="#a06a84">genuinely concrete design</text>
+  <text x="752" y="152" font-size="13" fill="#444">the bid keypad</text>
+  <text x="752" y="174" font-size="13" fill="#444">direction-then-difference</text>
+  <text x="752" y="196" font-size="13" fill="#444">the counting tape</text>
+  <text x="752" y="218" font-size="13" fill="#444">the round-count slider</text>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 630" font-family="sans-serif">
+  <!-- stage gridlines -->
+  <line x1="270" y1="40" x2="270" y2="560" stroke="#e8e8e8" stroke-dasharray="2 4"/>
+  <line x1="470" y1="40" x2="470" y2="560" stroke="#e8e8e8" stroke-dasharray="2 4"/>
+  <line x1="670" y1="40" x2="670" y2="560" stroke="#e8e8e8" stroke-dasharray="2 4"/>
+  <!-- axes -->
+  <line x1="70" y1="40" x2="70" y2="560" stroke="#999" stroke-width="1.5"/>
+  <line x1="70" y1="560" x2="870" y2="560" stroke="#999" stroke-width="1.5"/>
+  <text x="8" y="55" font-size="11" fill="#999">visible</text>
+  <text x="8" y="555" font-size="11" fill="#999">invisible</text>
+  <text transform="rotate(-90 30 300)" x="30" y="300" text-anchor="middle" font-size="13" fill="#999">value chain</text>
+  <text x="170" y="584" text-anchor="middle" font-size="13" fill="#555">novel</text>
+  <text x="370" y="584" text-anchor="middle" font-size="13" fill="#555">emerging</text>
+  <text x="570" y="584" text-anchor="middle" font-size="13" fill="#555">good practice</text>
+  <text x="770" y="584" text-anchor="middle" font-size="13" fill="#555">best practice</text>
+  <text x="470" y="612" text-anchor="middle" font-size="12" fill="#999">evolution of the practice, as performed</text>
+  <!-- ownership boundaries -->
+  <rect x="200" y="30" width="460" height="70" rx="12" fill="#f59e0b" fill-opacity="0.08" stroke="#b45309" stroke-width="1.5"/>
+  <text x="672" y="60" text-anchor="start" font-size="13" font-weight="bold" fill="#b45309">leadership</text>
+  <text x="672" y="76" text-anchor="start" font-size="11" fill="#b45309">problem selection, coaching</text>
+  <rect x="150" y="118" width="520" height="322" rx="16" fill="#1d4ed8" fill-opacity="0.05" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="162" y="138" text-anchor="start" font-size="13" font-weight="bold" fill="#1d4ed8">the PM</text>
+  <rect x="440" y="444" width="390" height="112" rx="16" fill="#0e7a4e" fill-opacity="0.06" stroke="#0e7a4e" stroke-width="1.5"/>
+  <text x="822" y="505" text-anchor="end" font-size="13" font-weight="bold" fill="#0e7a4e">org capabilities</text>
+  <!-- edges -->
+  <g stroke="#d5d5d5" stroke-width="1">
+    <line x1="430" y1="75" x2="240" y2="155"/>
+    <line x1="430" y1="75" x2="400" y2="175"/>
+    <line x1="240" y1="155" x2="330" y2="300"/>
+    <line x1="240" y1="155" x2="500" y2="290"/>
+    <line x1="240" y1="155" x2="560" y2="335"/>
+    <line x1="240" y1="155" x2="590" y2="410"/>
+    <line x1="400" y1="175" x2="480" y2="235"/>
+    <line x1="400" y1="175" x2="430" y2="355"/>
+    <line x1="400" y1="175" x2="360" y2="395"/>
+    <line x1="480" y1="235" x2="430" y2="355"/>
+    <line x1="480" y1="235" x2="500" y2="290"/>
+    <line x1="330" y1="300" x2="500" y2="470"/>
+    <line x1="330" y1="300" x2="590" y2="410"/>
+    <line x1="560" y1="335" x2="660" y2="515"/>
+    <line x1="430" y1="355" x2="770" y2="540"/>
+    <line x1="590" y1="410" x2="710" y2="470"/>
+  </g>
+  <!-- missing capability -->
+  <line x1="330" y1="300" x2="250" y2="500" stroke="#c05050" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <circle cx="250" cy="500" r="7" fill="none" stroke="#c05050" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="250" y="527" text-anchor="middle" font-size="12" fill="#c05050">customer insights repository (missing)</text>
+  <text x="95" y="455" text-anchor="start" font-size="12" fill="#c05050">the org failing the PM,</text>
+  <text x="95" y="470" text-anchor="start" font-size="12" fill="#c05050">not the PM failing</text>
+  <!-- anchor -->
+  <circle cx="430" cy="75" r="7" fill="#333"/>
+  <text x="430" y="52" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">discover solutions that are valuable and viable</text>
+  <!-- components -->
+  <g fill="#fff" stroke="#333" stroke-width="1.5">
+    <circle cx="240" cy="155" r="6"/>
+    <circle cx="400" cy="175" r="6"/>
+    <circle cx="480" cy="235" r="6"/>
+    <circle cx="330" cy="300" r="6"/>
+    <circle cx="500" cy="290" r="6"/>
+    <circle cx="560" cy="335" r="6"/>
+    <circle cx="430" cy="355" r="6"/>
+    <circle cx="360" cy="395" r="6"/>
+    <circle cx="590" cy="410" r="6"/>
+    <circle cx="500" cy="470" r="6"/>
+    <circle cx="710" cy="470" r="6"/>
+    <circle cx="660" cy="515" r="6"/>
+    <circle cx="770" cy="540" r="6"/>
+  </g>
+  <!-- labels -->
+  <g font-size="13" fill="#333">
+    <text x="240" y="138" text-anchor="middle">the kill or ship call</text>
+    <text x="400" y="158" text-anchor="middle">viability assessment</text>
+    <text x="493" y="230" text-anchor="start">stakeholder trust</text>
+    <text x="330" y="283" text-anchor="middle">customer knowledge</text>
+    <text x="500" y="273" text-anchor="middle">product knowledge</text>
+    <text x="573" y="330" text-anchor="start">data knowledge</text>
+    <text x="417" y="360" text-anchor="end">business knowledge</text>
+    <text x="347" y="400" text-anchor="end">market &amp; industry knowledge</text>
+    <text x="603" y="415" text-anchor="start">discovery techniques</text>
+    <text x="487" y="475" text-anchor="end">access to users and buyers</text>
+    <text x="710" y="453" text-anchor="middle">prototyping tooling</text>
+    <text x="647" y="520" text-anchor="end">product analytics platform</text>
+    <text x="770" y="523" text-anchor="middle">CRM / sales data</text>
+  </g>
+</svg>

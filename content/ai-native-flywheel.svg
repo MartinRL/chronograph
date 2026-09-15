@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title>The AI-native flywheel: wider spec scope, fewer people per revenue, higher pay, better people, wider spec scope</title>
+  <defs>
+    <marker id="arr" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="14" refX="14" refY="7" orient="auto"><path d="M0,0 L16,7 L0,14 z" fill="#1F3864"/></marker>
+  </defs>
+  <rect width="1200" height="640" fill="#ffffff"/>
+
+  <path d="M636.0,144.1 A160,160 0 0 1 755.9,264.0" fill="none" stroke="#1F3864" stroke-width="5" stroke-linecap="round" marker-end="url(#arr)"/>
+  <path d="M755.9,336.0 A160,160 0 0 1 636.0,455.9" fill="none" stroke="#1F3864" stroke-width="5" stroke-linecap="round" marker-end="url(#arr)"/>
+  <path d="M564.0,455.9 A160,160 0 0 1 444.1,336.0" fill="none" stroke="#1F3864" stroke-width="5" stroke-linecap="round" marker-end="url(#arr)"/>
+  <path d="M444.1,264.0 A160,160 0 0 1 564.0,144.1" fill="none" stroke="#1F3864" stroke-width="5" stroke-linecap="round" marker-end="url(#arr)"/>
+  <circle cx="600.0" cy="140.0" r="22" fill="#1F3864"/><text x="600.0" y="146.0" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+  <circle cx="760.0" cy="300.0" r="22" fill="#7030A0"/><text x="760.0" y="306.0" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+  <circle cx="600.0" cy="460.0" r="22" fill="#7030A0"/><text x="600.0" y="466.0" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+  <circle cx="440.0" cy="300.0" r="22" fill="#1F3864"/><text x="440.0" y="306.0" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+
+  <!-- hub -->
+  <text x="600" y="262" font-size="12" font-weight="bold" fill="#5c636a" text-anchor="middle" letter-spacing="1">AI NATIVE IS A FINANCIAL SHAPE</text>
+  <text x="600" y="288" font-size="17" font-weight="bold" fill="#16213E" text-anchor="middle">revenue / person 2–5× cohort</text>
+  <text x="600" y="312" font-size="17" font-weight="bold" fill="#16213E" text-anchor="middle">pay / person rising</text>
+  <text x="600" y="336" font-size="17" font-weight="bold" fill="#16213E" text-anchor="middle">toward 2× cohort</text>
+
+  <!-- 1 top -->
+  <text x="600" y="70" font-size="16" font-weight="bold" fill="#1F3864" text-anchor="middle">1 · WIDER SPEC SCOPE</text>
+  <text x="600" y="90" font-size="12.5" fill="#343a40" text-anchor="middle">every function written down well enough for agents to run stops scaling with headcount:</text>
+  <text x="600" y="107" font-size="12.5" fill="#343a40" text-anchor="middle">fewer people per unit of revenue</text>
+
+  <!-- 2 right -->
+  <text x="800" y="286" font-size="16" font-weight="bold" fill="#7030A0">2 · HIGHER REVENUE PER PERSON</text>
+  <text x="800" y="306" font-size="12.5" fill="#343a40">funds pay that rises every turn toward twice the</text>
+  <text x="800" y="323" font-size="12.5" fill="#343a40">cohort while margin still expands; pay is a share</text>
+  <text x="800" y="340" font-size="12.5" fill="#343a40">of revenue per head, not a survey rate</text>
+
+  <!-- 3 bottom -->
+  <text x="600" y="512" font-size="16" font-weight="bold" fill="#7030A0" text-anchor="middle">3 · THE FEW WHO CAN, STAY</text>
+  <text x="600" y="532" font-size="12.5" fill="#343a40" text-anchor="middle">rising pay plus work that is deciding and judging, not typing,</text>
+  <text x="600" y="549" font-size="12.5" fill="#343a40" text-anchor="middle">attracts and keeps the few who can write specs and hold agents to them</text>
+
+  <!-- 4 left -->
+  <text x="400" y="286" font-size="16" font-weight="bold" fill="#1F3864" text-anchor="end">4 · JUDGMENT CODIFIED</text>
+  <text x="400" y="306" font-size="12.5" fill="#343a40" text-anchor="end">those people widen spec scope further and</text>
+  <text x="400" y="323" font-size="12.5" fill="#343a40" text-anchor="end">leave their judgment behind as an asset the</text>
+  <text x="400" y="340" font-size="12.5" fill="#343a40" text-anchor="end">firm keeps; back to 1, one turn cheaper</text>
+
+  <!-- footer -->
+  <text x="600" y="605" font-size="12.5" fill="#5c636a" text-anchor="middle">Runs backwards just as easily: bank the savings instead of paying them out, the spec-writers and agent managers leave, process debt returns, headcount creeps back.</text>
+  <text x="600" y="624" font-size="11" fill="#868e96" text-anchor="middle">Fewer people is a consequence of the wheel turning, never its target. Failure test: agents everywhere, ratios unchanged.</text>
+</svg>

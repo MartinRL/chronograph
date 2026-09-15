@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" font-family="sans-serif">
+  <defs>
+    <marker id="arrRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c05050"/>
+    </marker>
+  </defs>
+  <!-- stage gridlines -->
+  <line x1="270" y1="40" x2="270" y2="360" stroke="#e8e8e8" stroke-dasharray="2 4"/>
+  <line x1="470" y1="40" x2="470" y2="360" stroke="#e8e8e8" stroke-dasharray="2 4"/>
+  <line x1="670" y1="40" x2="670" y2="360" stroke="#e8e8e8" stroke-dasharray="2 4"/>
+  <!-- axes -->
+  <line x1="70" y1="40" x2="70" y2="360" stroke="#999" stroke-width="1.5"/>
+  <line x1="70" y1="360" x2="870" y2="360" stroke="#999" stroke-width="1.5"/>
+  <text x="170" y="384" text-anchor="middle" font-size="13" fill="#555">novel</text>
+  <text x="370" y="384" text-anchor="middle" font-size="13" fill="#555">emerging</text>
+  <text x="570" y="384" text-anchor="middle" font-size="13" fill="#555">good practice</text>
+  <text x="770" y="384" text-anchor="middle" font-size="13" fill="#555">best practice</text>
+  <text x="470" y="412" text-anchor="middle" font-size="12" fill="#999">evolution of the practice</text>
+  <!-- judgment stays put -->
+  <line x1="200" y1="97" x2="300" y2="150" stroke="#c4c4c4" stroke-width="1"/>
+  <line x1="200" y1="97" x2="280" y2="260" stroke="#c4c4c4" stroke-width="1"/>
+  <circle cx="200" cy="90" r="7" fill="#333"/>
+  <text x="200" y="70" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">the kill or ship call</text>
+  <text x="620" y="70" text-anchor="middle" font-size="13" fill="#555">the tools move right; the judgment they feed does not</text>
+  <!-- prototyping pipeline -->
+  <rect x="230" y="150" width="600" height="64" rx="8" fill="#f6f8fa" stroke="#999"/>
+  <text x="220" y="186" text-anchor="end" font-size="13" font-weight="bold" fill="#333">prototyping</text>
+  <g fill="#fff" stroke="#333" stroke-width="1.5">
+    <circle cx="310" cy="196" r="5"/>
+    <circle cx="530" cy="196" r="5"/>
+    <circle cx="740" cy="196" r="5"/>
+  </g>
+  <g font-size="12" fill="#333">
+    <text x="310" y="176" text-anchor="middle">paper sketches</text>
+    <text x="530" y="176" text-anchor="middle">Figma prototype</text>
+    <text x="740" y="176" text-anchor="middle">live-data prototype</text>
+  </g>
+  <line x1="545" y1="196" x2="722" y2="196" stroke="#c05050" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrRed)"/>
+  <text x="632" y="232" text-anchor="middle" font-size="12" font-style="italic" fill="#c05050">GenAI collapses live-data prototypes from weeks to minutes</text>
+  <!-- user insight pipeline -->
+  <rect x="230" y="260" width="600" height="64" rx="8" fill="#f6f8fa" stroke="#999"/>
+  <text x="220" y="296" text-anchor="end" font-size="13" font-weight="bold" fill="#333">user insight</text>
+  <g fill="#fff" stroke="#333" stroke-width="1.5">
+    <circle cx="310" cy="306" r="5"/>
+    <circle cx="530" cy="306" r="5"/>
+    <circle cx="740" cy="306" r="5"/>
+  </g>
+  <g font-size="12" fill="#333">
+    <text x="310" y="286" text-anchor="middle">ad-hoc interviews</text>
+    <text x="530" y="286" text-anchor="middle">continuous discovery</text>
+    <text x="740" y="286" text-anchor="middle">product analytics</text>
+  </g>
+  <line x1="545" y1="306" x2="722" y2="306" stroke="#c05050" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrRed)"/>
+  <text x="632" y="342" text-anchor="middle" font-size="12" font-style="italic" fill="#c05050">AI-assisted synthesis pushes insight tooling right</text>
+</svg>
