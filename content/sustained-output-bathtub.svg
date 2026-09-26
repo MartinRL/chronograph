@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#2f9e44"/></marker>
+    <marker id="arrDark" markerWidth="10" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#16213E"/></marker>
+  </defs>
+  <rect width="1200" height="620" fill="#ffffff"/>
+
+  <!-- inflow pipe -->
+  <path d="M60,90 L300,90 L300,190" fill="none" stroke="#1F3864" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M300,190 L300,300" fill="none" stroke="#1F3864" stroke-width="8" stroke-dasharray="4 10" stroke-linecap="round"/>
+  <text x="60" y="60" font-size="15" font-weight="bold" fill="#1F3864">OUTPUT · the flow · ×m</text>
+  <text x="60" y="130" font-size="12.5" fill="#343a40">code and features shipped;</text>
+  <text x="60" y="147" font-size="12.5" fill="#343a40">the rate agents lift</text>
+
+  <!-- gate valve on the vertical pipe -->
+  <polygon points="300,110 330,140 300,170 270,140" fill="#ffffff" stroke="#2f9e44" stroke-width="4"/>
+  <line x1="330" y1="140" x2="352" y2="140" stroke="#2f9e44" stroke-width="4"/>
+  <line x1="352" y1="125" x2="352" y2="155" stroke="#2f9e44" stroke-width="4"/>
+
+  <!-- tub -->
+  <path d="M220,300 L220,470 Q220,500 250,500 L790,500 Q820,500 820,470 L820,300" fill="none" stroke="#16213E" stroke-width="6" stroke-linecap="round"/>
+  <path d="M226,360 L226,470 Q226,494 250,494 L790,494 Q814,494 814,470 L814,360 Z" fill="#7030A0" fill-opacity="0.14"/>
+  <line x1="226" y1="360" x2="814" y2="360" stroke="#7030A0" stroke-width="4"/>
+  <text x="520" y="415" font-size="16" font-weight="bold" fill="#7030A0" text-anchor="middle">SUSTAINED OUTPUT · the stock</text>
+  <text x="520" y="438" font-size="12.5" fill="#343a40" text-anchor="middle">software that still runs, is still understood, still changes safely</text>
+  <text x="520" y="456" font-size="12.5" fill="#343a40" text-anchor="middle">output integrated over time, minus the drain</text>
+
+  <!-- outcome reads the level (left) -->
+  <text x="60" y="345" font-size="13" font-weight="bold" fill="#16213E">OUTCOME</text>
+  <text x="60" y="363" font-size="12.5" fill="#343a40">customers respond to</text>
+  <text x="60" y="380" font-size="12.5" fill="#343a40">the level, not the rate</text>
+  <line x1="150" y1="400" x2="212" y2="366" stroke="#16213E" stroke-width="2" marker-end="url(#arrDark)"/>
+
+  <!-- drain pipe -->
+  <path d="M740,500 L740,560 L980,560" fill="none" stroke="#868e96" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="600" y="590" font-size="15" font-weight="bold" fill="#5c636a">UPKEEP · the drain · ×k</text>
+  <text x="600" y="608" font-size="12.5" fill="#343a40">maintenance per unit of code, relative to today</text>
+
+  <!-- narrowing clamp on the drain -->
+  <rect x="860" y="540" width="40" height="40" rx="4" fill="#ffffff" stroke="#2f9e44" stroke-width="4"/>
+  <line x1="866" y1="560" x2="894" y2="560" stroke="#2f9e44" stroke-width="4"/>
+
+  <!-- loop 1: gate on the inflow -->
+  <path d="M560,60 C480,70 410,110 356,140" fill="none" stroke="#2f9e44" stroke-width="2.5" stroke-dasharray="7 6" marker-end="url(#arr)"/>
+  <text x="570" y="52" font-size="14" font-weight="bold" fill="#2f9e44">1 · GATE ON THE INFLOW</text>
+  <text x="570" y="72" font-size="12.5" fill="#343a40">scenarios from the spec, a code-health threshold;</text>
+  <text x="570" y="89" font-size="12.5" fill="#343a40">a failure blocks, the agent self-corrects, the lesson becomes a rule.</text>
+  <text x="570" y="106" font-size="12.5" fill="#343a40">A defect stopped here never enters the stock.</text>
+
+  <!-- loop 2: agents on the drain, fed by telemetry from the level -->
+  <path d="M820,330 C980,300 1060,420 1000,520 C980,548 940,558 905,560" fill="none" stroke="#2f9e44" stroke-width="2.5" stroke-dasharray="7 6" marker-end="url(#arr)"/>
+  <text x="905" y="230" font-size="14" font-weight="bold" fill="#2f9e44">2 · AGENTS ON THE DRAIN</text>
+  <text x="905" y="250" font-size="12.5" fill="#343a40">telemetry read back by agents; reactive,</text>
+  <text x="905" y="267" font-size="12.5" fill="#343a40">active and always-on maintenance loops;</text>
+  <text x="905" y="284" font-size="12.5" fill="#343a40">a deletion lane for code that no longer earns.</text>
+
+  <!-- sign test -->
+  <text x="60" y="230" font-size="15" font-weight="bold" fill="#16213E">λ = m · k</text>
+  <text x="60" y="252" font-size="12.5" fill="#343a40">λ &gt; 1: the level stops rising</text>
+  <text x="60" y="269" font-size="12.5" fill="#343a40">λ ≤ 1: the boost is durable</text>
+  <text x="60" y="286" font-size="12.5" fill="#343a40">k = 1/m is break-even, not a target</text>
+</svg>
