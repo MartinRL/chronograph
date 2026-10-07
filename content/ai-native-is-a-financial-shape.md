@@ -2,6 +2,7 @@
 title: "AI-Native Is a Financial Shape, Not a Tooling Choice"
 description: "Output is easy, and AI just made it free. Transformations die on the rung the familiar output/outcome/impact ladder doesn't have, and only one test settles the question: a ratio against your cohort."
 created: 2026-09-13
+updated: 2026-10-07
 status: published
 published: https://chronograph.rosenlidholm.se/ai-native-is-a-financial-shape
 venue: chronograph
