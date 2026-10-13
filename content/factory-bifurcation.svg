@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#6b7280"/>
+    </marker>
+    <marker id="arG" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#15803d"/>
+    </marker>
+    <marker id="arR" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#b91c1c"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="640" fill="#ffffff"/>
+
+  <text x="600" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#111827">The bifurcation</text>
+  <text x="600" y="72" text-anchor="middle" font-size="16" fill="#4b5563">Same starting point, two ways to account for the thing that builds everything else</text>
+
+  <!-- start -->
+  <rect x="470" y="100" width="260" height="64" rx="12" fill="#f9fafb" stroke="#374151" stroke-width="2.5"/>
+  <text x="600" y="128" text-anchor="middle" font-size="18" font-weight="700" fill="#111827">AI arrives in engineering</text>
+  <text x="600" y="150" text-anchor="middle" font-size="13" fill="#6b7280">one decision: what is this, on the books?</text>
+
+  <!-- branches -->
+  <path d="M 540 164 Q 540 220 330 232" fill="none" stroke="#b91c1c" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#arR)"/>
+  <path d="M 660 164 Q 660 220 870 232" fill="none" stroke="#15803d" stroke-width="4" marker-end="url(#arG)"/>
+
+  <!-- LEFT: seats -->
+  <rect x="80" y="236" width="490" height="300" rx="14" fill="#fff5f5" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="325" y="272" text-anchor="middle" font-size="22" font-weight="700" fill="#7f1d1d">Seats</text>
+  <text x="325" y="296" text-anchor="middle" font-size="14" fill="#4b5563">a license per head, booked as tooling</text>
+
+  <text x="110" y="336" font-size="15" fill="#374151"><tspan font-weight="700">Domain:</tspan> none, it is an IT cost line</text>
+  <text x="110" y="366" font-size="15" fill="#374151"><tspan font-weight="700">Measured on:</tspan> overhead, cost per developer</text>
+  <text x="110" y="396" font-size="15" fill="#374151"><tspan font-weight="700">Wardley:</tspan> the whole harness rented</text>
+  <text x="110" y="426" font-size="15" fill="#374151"><tspan font-weight="700">Owns:</tspan> the model layer everyone rents</text>
+  <text x="110" y="456" font-size="15" fill="#374151"><tspan font-weight="700">Budget cycle:</tspan> annual, scrutinized apart from what it enables</text>
+
+  <text x="325" y="508" text-anchor="middle" font-size="16" font-weight="700" fill="#b91c1c">Starved, and competed away within a season</text>
+
+  <!-- RIGHT: factory -->
+  <rect x="630" y="236" width="490" height="300" rx="14" fill="#f0fdf4" stroke="#15803d" stroke-width="2.5"/>
+  <text x="875" y="272" text-anchor="middle" font-size="22" font-weight="700" fill="#14532d">Factory</text>
+  <text x="875" y="296" text-anchor="middle" font-size="14" fill="#4b5563">a platform stream, run as a product</text>
+
+  <text x="660" y="336" font-size="15" fill="#374151"><tspan font-weight="700">Domain:</tspan> Platform, serves every other stream</text>
+  <text x="660" y="366" font-size="15" fill="#374151"><tspan font-weight="700">Measured on:</tspan> internal customer outcomes, flow</text>
+  <text x="660" y="396" font-size="15" fill="#374151"><tspan font-weight="700">Wardley:</tspan> harness and specs at genesis, coding-agents rented</text>
+  <text x="660" y="426" font-size="15" fill="#374151"><tspan font-weight="700">Owns:</tspan> the layers bonded to the product</text>
+  <text x="660" y="456" font-size="15" fill="#374151"><tspan font-weight="700">Budget cycle:</tspan> funded on what it enables</text>
+
+  <text x="875" y="508" text-anchor="middle" font-size="16" font-weight="700" fill="#15803d">Compounds with every run</text>
+
+  <!-- footer -->
+  <text x="600" y="590" text-anchor="middle" font-size="15" fill="#4b5563">Measure the thing that makes everything else as a cost of the things it makes,</text>
+  <text x="600" y="612" text-anchor="middle" font-size="15" fill="#4b5563">and you have made the core-metrics mistake in reverse.</text>
+</svg>

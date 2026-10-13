@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#6b7280"/>
+    </marker>
+    <marker id="arG" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#15803d"/>
+    </marker>
+    <marker id="arR" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#b91c1c"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="760" fill="#ffffff"/>
+
+  <text x="600" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#111827">The circle of product life</text>
+  <text x="600" y="72" text-anchor="middle" font-size="16" fill="#4b5563">Four lifecycle domains on the ring, the factory at the hub. Sunset feeds the next bet.</text>
+
+  <!-- ring: centre (600,400), r=250. Clockwise: Incubation (top) -> Transformation (right) -> Core (bottom) -> Sunset (left) -> Incubation -->
+  <path d="M 717 179 A 250 250 0 0 1 843 340" fill="none" stroke="#6b7280" stroke-width="4" marker-end="url(#ar)"/>
+  <path d="M 843 460 A 250 250 0 0 1 717 621" fill="none" stroke="#6b7280" stroke-width="4" marker-end="url(#ar)"/>
+  <path d="M 483 621 A 250 250 0 0 1 357 460" fill="none" stroke="#6b7280" stroke-width="4" marker-end="url(#ar)"/>
+  <path d="M 357 340 A 250 250 0 0 1 483 179" fill="none" stroke="#15803d" stroke-width="5" marker-end="url(#arG)"/>
+  <text x="300" y="178" text-anchor="middle" font-size="14" font-weight="700" fill="#15803d">capacity, customers,</text>
+  <text x="300" y="198" text-anchor="middle" font-size="14" font-weight="700" fill="#15803d">learnings</text>
+
+  <!-- kill switch: Incubation straight to Sunset -->
+  <path d="M 490 202 L 468 346" fill="none" stroke="#b91c1c" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#arR)"/>
+  <text x="428" y="284" text-anchor="middle" font-size="13" fill="#b91c1c">killed bet</text>
+
+  <!-- Incubation (top) -->
+  <rect x="490" y="100" width="220" height="100" rx="12" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="600" y="132" text-anchor="middle" font-size="20" font-weight="700" fill="#1e3a8a">Incubation</text>
+  <text x="600" y="156" text-anchor="middle" font-size="14" fill="#374151">finding fit</text>
+  <text x="600" y="178" text-anchor="middle" font-size="13" fill="#6b7280">learning, leading indicators</text>
+
+  <!-- Transformation (right) -->
+  <rect x="730" y="350" width="240" height="100" rx="12" fill="#f5f3ff" stroke="#6d28d9" stroke-width="2.5"/>
+  <text x="850" y="382" text-anchor="middle" font-size="20" font-weight="700" fill="#4c1d95">Transformation</text>
+  <text x="850" y="406" text-anchor="middle" font-size="14" fill="#374151">scaling to material revenue</text>
+  <text x="850" y="428" text-anchor="middle" font-size="13" fill="#6b7280">growth, adoption</text>
+
+  <!-- Core (bottom) -->
+  <rect x="490" y="600" width="220" height="100" rx="12" fill="#f0fdf4" stroke="#15803d" stroke-width="2.5"/>
+  <text x="600" y="632" text-anchor="middle" font-size="20" font-weight="700" fill="#14532d">Core</text>
+  <text x="600" y="656" text-anchor="middle" font-size="14" fill="#374151">mature, cash-generating</text>
+  <text x="600" y="678" text-anchor="middle" font-size="13" fill="#6b7280">margin, reliability</text>
+
+  <!-- Sunset (left) -->
+  <rect x="230" y="350" width="240" height="100" rx="12" fill="#fff7ed" stroke="#c2410c" stroke-width="2.5"/>
+  <text x="350" y="382" text-anchor="middle" font-size="20" font-weight="700" fill="#7c2d12">Sunset</text>
+  <text x="350" y="406" text-anchor="middle" font-size="14" fill="#374151">retiring</text>
+  <text x="350" y="428" text-anchor="middle" font-size="13" fill="#6b7280">migration, cost-to-serve, run-off</text>
+
+  <!-- Platform hub -->
+  <circle cx="600" cy="400" r="92" fill="#f9fafb" stroke="#374151" stroke-width="3"/>
+  <text x="600" y="396" text-anchor="middle" font-size="24" font-weight="700" fill="#111827">Factory</text>
+  <text x="600" y="416" text-anchor="middle" font-size="12" fill="#6b7280">the platform domain</text>
+  <text x="600" y="432" text-anchor="middle" font-size="12" fill="#6b7280">serves all four</text>
+
+  <!-- spokes: platform serves the ring -->
+  <line x1="600" y1="308" x2="600" y2="202" stroke="#9ca3af" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="692" y1="400" x2="728" y2="400" stroke="#9ca3af" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="600" y1="492" x2="600" y2="598" stroke="#9ca3af" stroke-width="2" stroke-dasharray="4 4"/>
+  <!-- harvest: sunset -> platform -->
+  <line x1="472" y1="400" x2="502" y2="400" stroke="#15803d" stroke-width="3" marker-end="url(#arG)"/>
+
+  <!-- legend -->
+  <line x1="380" y1="735" x2="430" y2="735" stroke="#6b7280" stroke-width="4" marker-end="url(#ar)"/>
+  <text x="440" y="740" font-size="14" fill="#374151">explicit threshold</text>
+  <line x1="600" y1="735" x2="650" y2="735" stroke="#15803d" stroke-width="4" marker-end="url(#arG)"/>
+  <text x="660" y="740" font-size="14" fill="#374151">closes the loop</text>
+  <line x1="800" y1="735" x2="850" y2="735" stroke="#b91c1c" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#arR)"/>
+  <text x="860" y="740" font-size="14" fill="#374151">kill switch</text>
+</svg>
