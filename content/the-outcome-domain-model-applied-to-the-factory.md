@@ -1,5 +1,5 @@
 ---
-title: "Your Factory Is Not Tooling"
+title: "The Outcome Domain Model Applied to the Factory"
 description: "Software companies adopting AI are bifurcating. One buys seats and books them as overhead. The other builds a factory and runs it as a platform. Kersten's Outcome Domain Model explains why only one of them compounds."
 created: 2026-10-13
 updated: 2026-10-13
@@ -8,7 +8,7 @@ published: https://chronograph.rosenlidholm.se/the-outcome-domain-model-applied-
 venue: chronograph, linkedin
 ---
 
-# Your Factory Is Not Tooling
+# The Outcome Domain Model Applied to the Factory
 
 ![The circle of product life: four lifecycle domains on the ring, the factory at the hub](circle-of-product-life.svg)
 
