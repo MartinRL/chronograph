@@ -141,7 +141,7 @@ Almost nobody can put those three on a slide today, which is the useful part.
 
 The first rung belongs to the agents now, and it will be competed away as fast as your cohort renews the same subscriptions. The rung under it, the one the ladder never drew, is where the engineering leader's work went. Instrument the drain, gate the inflow, put agents on the outflow, and keep enough people who understand the whole to catch what the loops miss.
 
-Two rungs further up, what is left of m after the three discounts decides whether the company is an AI company or a company using AI. I made that argument for a CEO and board audience in [AI-Native Is a Financial Shape, Not a Tooling Choice](ai-native-is-a-financial-shape.md). This is the rung underneath it, and it is ours.
+Two rungs further up, what is left of m after the three discounts decides whether the company is an AI company or a company using AI. I made that argument for a CEO and board audience in [AI-Native Is a Financial Shape, Not a Tooling Choice](https://preread.rosenlidholm.se/ai-native-is-a-financial-shape). This is the rung underneath it, and it is ours.
 
 ---
 

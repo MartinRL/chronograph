@@ -67,7 +67,7 @@ Which brings us back to the trap. Of the two companies, the one pulling ahead di
 
 The components of agentic engineering do not evolve at the same rate. Frontier models are moving from product to commodity: the benchmarks converge. Agents are moving from custom to product. The harness, the rules and checks that decide what an agent may ship, sits at genesis. Specifications, which hold what your software must mean, sit in custom.
 
-When you buy a seat, you buy the commodity layer, the one every company in your cohort rents, and nothing else. I have [argued before](https://chronograph.rosenlidholm.se/ai-native-is-a-financial-shape) that a gain available to everyone for a monthly invoice is competed away within a season. [Models commoditize. The layers sandwiching them do not.](https://www.linkedin.com/feed/update/urn:li:activity:7491552249555542016/)
+When you buy a seat, you buy the commodity layer, the one every company in your cohort rents, and nothing else. I have [argued before](https://preread.rosenlidholm.se/ai-native-is-a-financial-shape) that a gain available to everyone for a monthly invoice is competed away within a season. [Models commoditize. The layers sandwiching them do not.](https://www.linkedin.com/feed/update/urn:li:activity:7491552249555542016/)
 
 So the seat company's accounting is self-fulfilling. It bought the factory as a commodity, so it declared the factory a commodity, and for the layer it bought the declaration is correct. It is wrong for the layers it never built.
 
